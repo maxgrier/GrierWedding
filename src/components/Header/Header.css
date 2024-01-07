@@ -1,0 +1,15 @@
+.header-outer{
+    min-height: 75px;
+    height: 15vh;
+    line-height: 15vh;
+    text-align: center;
+    background-color: lightgrey;
+    font-family: Snell Roundhand, cursive;
+    font-size: 30px;
+    box-shadow: 0px 5px 5px grey;
+    color: silver;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: grey;
+    text-shadow: 4px 5px 2px white;
+}
+
