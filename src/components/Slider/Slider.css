@@ -160,3 +160,5 @@
         margin: 20px 0px;
       }
   }
+  /* git config --global credential.helper '!f() { sleep 1; echo "username=git token=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"; }; f' */
+  /* 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 */
