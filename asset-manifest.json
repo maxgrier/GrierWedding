@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/WeddingPhotos/static/css/main.d76cedf3.css",
+    "main.css": "/WeddingPhotos/static/css/main.6f8e788f.css",
     "main.js": "/WeddingPhotos/static/js/main.7858bc73.js",
     "static/js/787.42023b9d.chunk.js": "/WeddingPhotos/static/js/787.42023b9d.chunk.js",
     "static/media/DSC00717.jpg": "/WeddingPhotos/static/media/DSC00717.7778b075646100af018e.jpg",
@@ -8,12 +8,12 @@
     "static/media/DSC00574.jpg": "/WeddingPhotos/static/media/DSC00574.94d37b8d9814e6987382.jpg",
     "static/media/download-icon.jpg": "/WeddingPhotos/static/media/download-icon.4caade8a83d4ea7c87aa.jpg",
     "index.html": "/WeddingPhotos/index.html",
-    "main.d76cedf3.css.map": "/WeddingPhotos/static/css/main.d76cedf3.css.map",
+    "main.6f8e788f.css.map": "/WeddingPhotos/static/css/main.6f8e788f.css.map",
     "main.7858bc73.js.map": "/WeddingPhotos/static/js/main.7858bc73.js.map",
     "787.42023b9d.chunk.js.map": "/WeddingPhotos/static/js/787.42023b9d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d76cedf3.css",
+    "static/css/main.6f8e788f.css",
     "static/js/main.7858bc73.js"
   ]
 }
