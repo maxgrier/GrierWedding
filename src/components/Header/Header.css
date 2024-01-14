@@ -1,15 +1,93 @@
 .header-outer{
+    display: inline-flex;
     min-height: 75px;
-    height: 15vh;
-    line-height: 15vh;
+    max-height: 20vh;
+    line-height: 12vh;
+    width: 100%;
     text-align: center;
     background-color: lightgrey;
     font-family: Snell Roundhand, cursive;
     font-size: 30px;
+    /* font-size: 20vh; */
     box-shadow: 0px 5px 5px grey;
-    color: silver;
-    -webkit-text-stroke-width: 0.5px;
+    /* color: silver; */
+    color: #858585;
+    /* -webkit-text-stroke-width: 0.5px;
     -webkit-text-stroke-color: grey;
-    text-shadow: 4px 5px 2px white;
+    text-shadow: 4px 5px 2px white; */
 }
 
+.title-outer{
+    width: 100%;
+}
+
+.date-outer {
+    height: 30px;
+    line-height: 25px;
+    font: 25px;
+}
+
+.home-outer{
+    width: 10%;
+    left: 1vh;
+    top: 3.5vh;
+    position: absolute;
+}
+
+.home-button{
+    display: block;
+    width: 65px;
+    height: 50px;
+    /* background-image: url('../../assets/images/homepage.png');
+    object-fit: cover; */
+    background: url('../../assets/images/homepage.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.home-button .visible{
+    display: inline;
+}
+.invisible {
+    display: none;
+    background-image: none;
+}
+
+.img-outer {
+    width: 80%;
+    height: 80%;
+    /* padding-left: 10%;
+    padding-top: 17%; */
+}
+
+@media (max-width:1000px){
+    .header-outer{
+        height: 15vh;
+        line-height: 10vh;
+        padding: 1vh;
+    /* -webkit-text-stroke-color: grey; */
+        font-size: 20px;
+        width: 100%;
+        /* color: red; */
+    }
+
+    .date-outer {
+        height: 25px;
+        line-height: 12px;
+        font: 12px;
+        margin: 2px;
+        /* color: red; */
+    }
+
+    .home-button{
+        height: 40px;
+    }
+
+    .home-outer{
+        top: 2.5vh;
+    }
+
+    /* .img-outer{
+        padding-top: 15%;
+    } */
+}

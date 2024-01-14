@@ -7,17 +7,23 @@ export default [
     title: "First Slide",
     description: "This is the first slider Image of our carousel",
     urls: First,
+    name: "DSC00574.jpg",
+    name2: "DSC00574",
   },
   {
     title: "Second Slide",
     description: "This is the second slider Image of our carousel",
     urls: Second,
+    name: "DSC00667.jpg",
+    name2: "DSC00667",
   },
   {
     title: "Third Slide",
     description: "This is the Third slider Image of our carousel",
     urls: Third,
-  },
+    name: "DSC00717.jpg",
+    name2: "DSC00717",
+  }
   // {
   //   title: "Fourth Slide",
   //   description: "This is the Fourth slider Image of our carousel",
