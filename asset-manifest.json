@@ -1,22 +1,26 @@
 {
   "files": {
-    "main.css": "/WeddingPhotos/static/css/main.3708cae2.css",
-    "main.js": "/WeddingPhotos/static/js/main.6952168d.js",
+    "main.css": "/WeddingPhotos/static/css/main.ea35a9b2.css",
+    "main.js": "/WeddingPhotos/static/js/main.f7a9cfb0.js",
     "static/js/787.42023b9d.chunk.js": "/WeddingPhotos/static/js/787.42023b9d.chunk.js",
     "static/media/Portraits.zip": "/WeddingPhotos/static/media/Portraits.579c5933e2b07db27a92.zip",
+    "static/media/DSC00429.jpg": "/WeddingPhotos/static/media/DSC00429.cccc7c07a3c6a2c982d8.jpg",
     "static/media/DSC00045.jpg": "/WeddingPhotos/static/media/DSC00045.39de09d0d58fb8757652.jpg",
+    "static/media/DSC00396.jpg": "/WeddingPhotos/static/media/DSC00396.aa68bfeaa1f50c6325fe.jpg",
     "static/media/DSC00717.jpg": "/WeddingPhotos/static/media/DSC00717.7778b075646100af018e.jpg",
+    "static/media/DSC00451.jpg": "/WeddingPhotos/static/media/DSC00451.63d276d27ecba06b7118.jpg",
     "static/media/DSC00667.jpg": "/WeddingPhotos/static/media/DSC00667.8f1ef9fdffc8f7788c42.jpg",
     "static/media/DSC00574.jpg": "/WeddingPhotos/static/media/DSC00574.94d37b8d9814e6987382.jpg",
     "static/media/DSC00126.jpg": "/WeddingPhotos/static/media/DSC00126.bbe38fc1aa63342b1ecf.jpg",
+    "static/media/DSC00422.jpg": "/WeddingPhotos/static/media/DSC00422.a3947593116fcf131d28.jpg",
     "static/media/download-icon.jpg": "/WeddingPhotos/static/media/download-icon.4caade8a83d4ea7c87aa.jpg",
     "index.html": "/WeddingPhotos/index.html",
-    "main.3708cae2.css.map": "/WeddingPhotos/static/css/main.3708cae2.css.map",
-    "main.6952168d.js.map": "/WeddingPhotos/static/js/main.6952168d.js.map",
+    "main.ea35a9b2.css.map": "/WeddingPhotos/static/css/main.ea35a9b2.css.map",
+    "main.f7a9cfb0.js.map": "/WeddingPhotos/static/js/main.f7a9cfb0.js.map",
     "787.42023b9d.chunk.js.map": "/WeddingPhotos/static/js/787.42023b9d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3708cae2.css",
-    "static/js/main.6952168d.js"
+    "static/css/main.ea35a9b2.css",
+    "static/js/main.f7a9cfb0.js"
   ]
 }
