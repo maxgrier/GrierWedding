@@ -36,13 +36,15 @@
 
 .home-button{
     display: block;
-    width: 65px;
+    width: 50px;
     height: 50px;
     /* background-image: url('../../assets/images/homepage.png');
     object-fit: cover; */
-    background: url('../../assets/images/homepage.png');
+    /* background: url('../../assets/images/homepage.png'); */
+    background: url('../../assets/images/ring_heart.jpg');
     background-repeat: no-repeat;
     background-size: contain;
+    border-radius: 50%;
 }
 
 .home-button .visible{
@@ -80,7 +82,8 @@
     }
 
     .home-button{
-        height: 40px;
+        height: 30px;
+        width: 30px;
     }
 
     .home-outer{

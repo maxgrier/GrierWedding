@@ -7,6 +7,7 @@ export default [
     title: "First Slide",
     description: "This is the first slider Image of our carousel",
     urls: First,
+    layout: 'portriat',
     name: "DSC00574.jpg",
     name2: "DSC00574",
   },
@@ -14,6 +15,7 @@ export default [
     title: "Second Slide",
     description: "This is the second slider Image of our carousel",
     urls: Second,
+    layout: 'portriat',
     name: "DSC00667.jpg",
     name2: "DSC00667",
   },
@@ -21,6 +23,7 @@ export default [
     title: "Third Slide",
     description: "This is the Third slider Image of our carousel",
     urls: Third,
+    layout: 'portriat',
     name: "DSC00717.jpg",
     name2: "DSC00717",
   }

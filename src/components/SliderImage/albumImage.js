@@ -1,23 +1,38 @@
-import First from "../../assets/DSC00574.jpg";
-import Second from "../../assets/images/portraits/DSC00045.jpg";
+import Groups from "../../assets/images/groups/DSC00220.jpg";
+import Portraits from "../../assets/images/portraits/DSC00045.jpg";
+import Ceremony from "../../assets/images/ceremony/DSC00451.jpg";
 import Third from "../../assets/DSC00717.jpg";
 
 export default [
   {
-    title: "Main",
-    link: "/WeddingPhotos/Main",
+    title: "Groups",
+    link: "/WeddingPhotos/Groups",
     description: "This is the first slider Image of our carousel",
-    urls: First,
-    name: "DSC00574.jpg",
-    name2: "DSC00574",
+    urls: Groups,
+    layout: 'portriat',
+    name: "DSC00220.jpg",
+    name2: "DSC00220",
+    count: 6,
   },
   {
     title: "Portraits",
     link: "/WeddingPhotos/Portraits",
     description: "This is the second slider Image of our carousel",
-    urls: Second,
+    urls: Portraits,
+    layout: 'portriat',
     name: "DSC00045.jpg",
     name2: "DSC00045",
+    count: 3,
+  },
+  {
+    title: "Ceremony",
+    link: "/WeddingPhotos/Ceremony",
+    description: "This is the second slider Image of our carousel",
+    urls: Ceremony,
+    layout: 'portriat',
+    name: "DSC00451.jpg",
+    name2: "DSC00451",
+    count: 3,
   },
   // {
   //   title: "Third Slide",

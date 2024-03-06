@@ -9,7 +9,9 @@
   }
   
   .slider-container {
-    min-height: 650px;
+    /* min-height: 650px; */
+    min-height: 90vh;
+    /* max-width: 99vw; */
     height: var(--heights);
     width: var(--widths);
     /* height: fit-content;
@@ -76,23 +78,64 @@
     height: var(--heights);
     width: var(--widths);
     position: relative;
+    border: 1px solid green;
+    margin: auto auto;
+  }
+
+  .slides .landscape {
+    width: fit-content;
+    /* height: fit-content; */
+  }
+
+  .slides .portriat {
+    height: 80vh;
+    /* height: fit-content; */
   }
   
   .slide-image {
-    /* width: 100%; */
     height: 100%;
-    /* min-width: 400px; */
-    min-height: 500px;
-    /* position: absolute; */
-    /* object-fit: cover; */
-    object-fit: contain;
+    min-height: 85vh;
+    max-width: 95vw;
+
+    /* object-fit: contain; */
     box-shadow: 0px 0px 20px black;
-    margin: 10px 0px;
+    /* margin: 10px 0px; */
     transition: all 0.5s ease-in;
     border-radius: 10px;
+
+
+    /* border: 1px solid blue; */
+/* position: absolute; */
+    /* object-fit: cover; */
+        /* min-width: 400px; */
+    /* min-height: 500px; */
+    /* width: 100%; */
+    
+    /* height: fit-content;
+    width: fit-content; */
 }
-  
-  .slide-title,
+
+.slide-image .portriat{
+  height: 100%;
+}
+
+.slide-image.landscape{
+  width: 75%;
+  /* height: 65vw; */
+  border: 2px solid purple;
+
+}
+
+/* .slide-image .landscape{
+  width: 100%;
+  object-fit: contain;
+  margin: auto auto;
+  min-height: 20vh;
+  height: 65vw;
+  border: 5px solid purple;
+} */
+
+.slide-title,
   .slide-text {
     width: 100%;
     height: 100%;
@@ -208,8 +251,90 @@
 
       .slide-image{
           /* width: 98%; */
-          height: 85%;
+          /* for portrait */
+          /* max-height: 80%;  */
+          max-width: 90vw;
+          /* height: fit-content; */
+          max-height: 80%; 
+        
+
+
         /* min-height: 200px; */
-        /* min-width: 300px; */
+          /* min-width: 90vw; */
+          /* min-width: 90vw; */
+          /* width: 90vh; */
+        
       }
+
+      /* Removed because it was messing with new carousel */
+      /* max-height: 60%; */
+      /* max-height: 55%; */
+      /* width: min-content; */
+      /* .portriat{
+        height: fit-content;
+        margin: auto auto;
+        height: max-content;
+        height: 90vh;
+      } */
+
+      .slide-image .landscape{
+        /*  for landscape */
+        min-height: 40vh;
+        /* max-height: 50%; */
+        width: 90vw;
+        max-width: 96vw;
+        /* height: min-content;
+        width: max-content; */
+
+        /* max-height: 80%; */
+        /* margin: 10% auto; */
+        /* margin: 10% auto; */
+
+      }
+
+      /* .slides .landscape {
+        width: fit-content;
+      } */
+
+      .slide-image .portriat{
+        height: 100%;
+      }
+
+      .slide-image.portriat{
+        object-fit: contain;
+        border: 2px solid yellow;
+      }
+      
+      .slide-image.landscape{
+        width: 100%;
+        object-fit: contain;
+        /* display: inline-flex; */
+        /* margin: auto auto; */
+        min-height: 40vw;
+        /* height: 65vw; */
+        border: 5px solid purple;
+        justify-self: center;
+        max-width: 100%;
+        max-height: 64vw;
+        /* margin: 25% auto; */
+      }
+
+      .slides {
+        display: grid;
+      }
+
+      
+      /* .App{
+        width: 300px;
+      } */
+  }
+  @media (max-width: 500px){
+    .slide-image.landscape{
+      margin: 15% auto;
+    }
+    .slide-image{
+      /* object-fit: contain; */
+      border: 1px solid yellow;
+    }
+    
   }

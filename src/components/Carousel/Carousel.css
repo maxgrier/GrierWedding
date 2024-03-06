@@ -1,0 +1,111 @@
+.carousel-outer{
+    position: relative;
+    max-width: 95vw;
+    max-width: 95vh;
+    width: 50vw;
+    height: 98%;
+}
+
+.carousel .slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide > div > img{
+    border-radius: 10px;
+    /* box-shadow: 0px 0px 20px black; */
+    box-shadow: 0px 0px 15px 1px black;
+    margin: 1%;
+}
+
+.slider-wrapper .axis-horizontal {
+    height: 100% !important;
+    padding: 10px;
+}
+
+.axis-horizontal {
+    height: 100% !important;
+}
+
+ /* The animation code */
+ @keyframes easeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  @keyframes easeInOut {
+    0% {opacity: 0;}
+    40% {opacity: 1;}
+    50% {opacity: 1;}
+    90% {opacity: 1;}
+    /* 100% {opacity: 1;} */
+    100% {opacity: 0;}
+  }
+
+  @keyframes easeOut {
+    from {opacity: 1;}
+    to {opacity: 0;}
+    /* to {opacity: 0;display: none;} */
+  }
+
+  @keyframes viz {
+    from {opacity: 1;}
+    to {display: none;visibility: hidden;}
+  }
+
+  
+  .slide.selected {
+    animation-name: easeInOut;
+    animation-duration: 8s;
+    /* transition-timing-function: ease-in-out;
+    transition: 5s; */
+        /* transitionTimingFunction: transitionTimingFunction,
+    msTransitionTimingFunction: transitionTimingFunction,
+    MozTransitionTimingFunction: transitionTimingFunction,
+    WebkitTransitionTimingFunction: transitionTimingFunction,
+    OTransitionTimingFunction: transitionTimingFunction, */
+    /* display: inline-block;
+    visibility: visible; */
+    
+    /* transition-timing-function: ease-in;
+    transition: 0.5s;
+    -webkit-transition-timing-function: ease-in-out; */
+    /* -webkit-transition-duration: 1s; */
+
+    /* opacity: 1; */
+    /* transition: opacity 1s linear; */
+    /* -moz-transition: opacity 2s linear;  */
+    /* Firefox 4 */
+    /* -webkit-transition: opacity 1s linear;  */
+    /* Safari and Chrome */
+    /* -o-transition: opacity 2s linear;  */
+    /* Opera */
+    /* -ms-transition: opacity 2s linear;  */
+    /* Explorer 10 */
+  }
+  
+  /* .slide.previous { */
+    /* animation-name: easeInOut;
+    animation-duration: 8s; */
+    /* animation-name: easeOut;
+    animation-duration: 3s; */
+    /* animation: viz 2s; */
+    /* display: none;
+    visibility: hidden; */
+
+  /* } */
+
+
+/* .portriat {
+    margin-top: 2%;
+} */
+/* 
+.landscape {
+    margin-top: 0.25%;
+} */
+
+@media(min-width: 1000px){
+    .carousel.carousel-slider .control-arrow {
+        padding: 10px;
+    }
+}

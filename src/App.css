@@ -48,3 +48,111 @@ a {
     transform: rotate(360deg);
   }
 }
+
+/* FOR NEW CAROUSEL */
+.demo-outer{
+  max-width: 100vw;
+    /* height: 90vh; */
+    height: 95vh;
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: lightblue; */
+    background-color: slategrey;
+
+    /* padding: 2vh 0; */
+}
+
+/* FOR IMAGE HEIGHT IN SLIDER */
+.demo-outer .carousel .slide img {
+  /* max-height: 95vh; */
+  max-height: 85vh;
+  width: auto; /*100vw*/
+  /* height: 90%; */
+  /* max-width: 98vw; */
+  /* max-width: 85vw; */
+  max-width: 98%;
+
+  /* margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  /* border: 1px solid red; */
+  margin: auto;
+}
+.demo-outer .carousel .slide div {
+  max-height: 98vh;
+  width: auto; 
+  max-width: 100vw;
+}
+
+.slide.previous >div >img {
+  display: none;
+  /* border: 1px solid red; */
+}
+.slide.previous.selected >div >img {
+  display: inline;
+  /* border: 1px solid red; */
+}
+/* .slide.selected {
+  display: inline;
+} */
+.carousel-outer{
+  position: relative;
+    max-width: 92vw;
+    /* width: 100%;
+    height: 90vh; */
+    margin: auto auto;
+    /* top: 5%; */
+      position: relative;
+      max-width: 90vw;
+      max-height: 90vh;
+}
+.carousel-outer {
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: 100%;
+}
+.carousel-outer.landscape{
+    top: 25%;
+}
+.carousel-root{
+  outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: grey; */
+    background-color: slategrey;
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.carousel .slider {
+  height: 100%;
+}
+
+.carousel.carousel-slider{
+  /* maybe for portrati */
+  /* width: 25%; */
+  /* maybe for landscape */
+  /* width: 100%; */
+  /* max-width: 98%; */
+  max-width: 100%;
+    /* max-height: 90%; */
+    max-height: 100%;
+    height: 100%;
+}
+/* .carousel.carousel-slider.portrait{
+  width: 25%;
+}
+.carousel.carousel-slider.landscape{
+  width: 100%;
+} */

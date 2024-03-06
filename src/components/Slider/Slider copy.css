@@ -1,0 +1,297 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  :root {
+    --heights: 85vh;
+    --widths: 100%;
+  }
+  
+  .slider-container {
+    /* min-height: 650px; */
+    min-height: 90vh;
+    /* max-width: 99vw; */
+    height: var(--heights);
+    width: var(--widths);
+    /* height: fit-content;
+    width: var(--widths); */
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    background-color: slategrey;
+    padding: 10px;
+    /* margin: 20px 0px; */
+  }
+  
+  /* The animation code */
+@keyframes easeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  @keyframes easeOut {
+    from {opacity: 1;}
+    to {opacity: 0;display: none;}
+  }
+
+  @keyframes viz {
+    from {opacity: 1;}
+    to {display: none;visibility: hidden;}
+  }
+
+  .active {
+    animation-name: easeIn;
+    animation-duration: 2s;
+
+    display: inline-block;
+    visibility: visible;
+    
+    /* transition-timing-function: ease-in;
+    transition: 0.5s;
+    -webkit-transition-timing-function: ease-in-out; */
+    /* -webkit-transition-duration: 1s; */
+
+    /* opacity: 1; */
+    /* transition: opacity 1s linear; */
+    /* -moz-transition: opacity 2s linear;  */
+    /* Firefox 4 */
+    /* -webkit-transition: opacity 1s linear;  */
+    /* Safari and Chrome */
+    /* -o-transition: opacity 2s linear;  */
+    /* Opera */
+    /* -ms-transition: opacity 2s linear;  */
+    /* Explorer 10 */
+  }
+  
+  .inactive {
+    animation-name: easeOut;
+    animation-duration: 3s;
+    /* animation: viz 2s; */
+    display: none;
+    visibility: hidden;
+    
+    
+  }
+  
+  .slides {
+    height: var(--heights);
+    width: var(--widths);
+    position: relative;
+    border: 1px solid green;
+  }
+
+  .slides .landscape {
+    width: fit-content;
+    /* height: fit-content; */
+  }
+
+  .slides .portriat {
+    height: 80vh;
+    /* height: fit-content; */
+  }
+  
+  .slide-image {
+    height: 100%;
+    min-height: 85vh;
+    max-width: 95vw;
+
+    object-fit: contain;
+    box-shadow: 0px 0px 20px black;
+    margin: 10px 0px;
+    transition: all 0.5s ease-in;
+    border-radius: 10px;
+
+
+    border: 1px solid blue;
+/* position: absolute; */
+    /* object-fit: cover; */
+        /* min-width: 400px; */
+    /* min-height: 500px; */
+    /* width: 100%; */
+    
+    /* height: fit-content;
+    width: fit-content; */
+}
+
+.slide-image .portriat{
+  height: 100%;
+}
+
+.slide-image .landscape{
+  width: 100%;
+}
+.slide-title,
+  .slide-text {
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    z-index: 10;
+  }
+  
+  .slide-text {
+    top: 65%;
+    font-size: 2rem;
+  }
+  
+  .prev,
+  .next {
+    color: transparent;
+    cursor: pointer;
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 1rem;
+    margin-top: -3rem;
+    font-size: 40px;
+    font-weight: bold;
+    border-radius: 0px 5px 5px 0px;
+  }
+
+  .prev {
+      left: 0;
+  }
+  
+  .next {
+      right: 10px;
+  }
+  
+  .slider-container:hover .prev,.slider-container:hover .next {
+    color: black
+  }
+  
+  .slider-container:hover .prev:hover,
+  .slider-container:hover .next:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: all 0.5s ease-in;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 5px 0px 0px 5px;
+  }
+  
+  .all-dots {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    top: 85%;
+    justify-content: center;
+    z-index: 200;
+  }
+  
+  .dot {
+    cursor: pointer;
+    height: 1.5rem;
+    width: 1.5rem;
+    margin: 0px 3px;
+    background-color: transparent;
+    /* background-color: rgba(0, 0, 0, 0.3); */
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  .slider-container:hover .dot:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  /* .active-dot {
+    background-color: rgba(255, 255, 255, 0.5);
+  } */
+  
+  .slider-container:hover .dot{
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .slider-container:hover .active-dot{
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .play-pause {
+    color: black;
+  }
+
+
+  @media (max-width: 1000px){
+    .slider-container {
+        /* min-height: 650px; */
+        height: var(--heights);
+        /* width: var(--widths); */
+        width: 100vw;
+        height: 85vh;
+        /* height: fit-content;
+        width: var(--widths); */
+        position: relative;
+        margin: auto;
+        overflow: hidden;
+        background-color: slategrey;
+        padding: 10px;
+        margin: 0px auto;
+      }
+
+      .slide-image{
+          /* width: 98%; */
+          /* for portrait */
+          /* max-height: 80%;  */
+          max-width: 90vw;
+          height: fit-content;
+          max-height: 80%; 
+        
+
+
+        /* min-height: 200px; */
+          /* min-width: 90vw; */
+          /* min-width: 90vw; */
+          /* width: 90vh; */
+        
+      }
+
+      .portriat{
+        /* max-height: 60%; */
+        height: fit-content;
+        /* max-height: 55%; */
+        margin: auto auto;
+        /* width: min-content; */
+        height: max-content;
+        height: 90vh;
+      }
+
+      .slide-image .landscape{
+        /*  for landscape */
+        min-height: 40vh;
+        /* max-height: 50%; */
+        width: 90vw;
+        max-width: 96vw;
+        /* height: min-content;
+        width: max-content; */
+
+        /* max-height: 80%; */
+        /* margin: 10% auto; */
+        margin: 10% auto;
+
+      }
+
+      .slides .landscape {
+        width: fit-content;
+        /* height: fit-content; */
+      }
+
+      .slide-image .portriat{
+        height: 100%;
+      }
+      
+      .slide-image .landscape{
+        width: 100%;
+      }
+
+      
+      /* .App{
+        width: 300px;
+      } */
+  }
