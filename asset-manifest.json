@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/WeddingPhotos/static/css/main.22645349.css",
+    "main.css": "/WeddingPhotos/static/css/main.d699685f.css",
     "main.js": "/WeddingPhotos/static/js/main.78ddc494.js",
     "reactPlayerYouTube.js": "/WeddingPhotos/static/js/reactPlayerYouTube.7e69f531.chunk.js",
     "reactPlayerSoundCloud.js": "/WeddingPhotos/static/js/reactPlayerSoundCloud.b73eb999.chunk.js",
@@ -37,7 +37,7 @@
     "static/media/ring_heart.jpg": "/WeddingPhotos/static/media/ring_heart.59203881f82a216522f9.jpg",
     "static/media/download-icon.jpg": "/WeddingPhotos/static/media/download-icon.4caade8a83d4ea7c87aa.jpg",
     "index.html": "/WeddingPhotos/index.html",
-    "main.22645349.css.map": "/WeddingPhotos/static/css/main.22645349.css.map",
+    "main.d699685f.css.map": "/WeddingPhotos/static/css/main.d699685f.css.map",
     "main.78ddc494.js.map": "/WeddingPhotos/static/js/main.78ddc494.js.map",
     "reactPlayerYouTube.7e69f531.chunk.js.map": "/WeddingPhotos/static/js/reactPlayerYouTube.7e69f531.chunk.js.map",
     "reactPlayerSoundCloud.b73eb999.chunk.js.map": "/WeddingPhotos/static/js/reactPlayerSoundCloud.b73eb999.chunk.js.map",
@@ -56,7 +56,7 @@
     "787.42023b9d.chunk.js.map": "/WeddingPhotos/static/js/787.42023b9d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.22645349.css",
+    "static/css/main.d699685f.css",
     "static/js/main.78ddc494.js"
   ]
 }
