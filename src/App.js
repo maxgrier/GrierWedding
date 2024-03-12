@@ -15,6 +15,8 @@ import sliderImageCeremony from "./components/SliderImage/sliderImageCeremony";
 import './App.css';
 import DemoCarousel from "./components/Carousel/Carousel";
 import { useState, useEffect } from "react";
+import Video from "./components/Video/Video";
+import FirstPhoto from "./components/FirstPhoto/FirstPhoto"
 // import zip from './assets/images/portraits/Portraits.zip'
 // import { Router, Routes, Route, Link } from 'react-router-dom';
 
@@ -61,8 +63,11 @@ function App() {
             <>
               <div className="App">
                 <Header />
+                <FirstPhoto/>
+                <Video/>
                 {/* <Slider sliderImage={sliderImage} album={''} /> */}
                 <div className='demo-outer'>
+                  {/* <Video/> */}
                   <DemoCarousel images={sliderImageCeremony}/>
                 </div>
                 <div className='line' />

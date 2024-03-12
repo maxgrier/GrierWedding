@@ -54,6 +54,7 @@ export default class DemoCarousel extends Component {
             // width was auto
             <div className='carousel-outer' style={{ maxHeight: '100%', maxWidth: '100%', width: '100%' }} key={this.state.key}>
                 <Carousel
+                    // autoPlay={this.state.autoPlay}
                     autoPlay={this.state.autoPlay}
                     interval={7500}
                     infiniteLoop={true}
@@ -61,7 +62,7 @@ export default class DemoCarousel extends Component {
                     showThumbs={false}
                     dynamicHeight={true}
                     showThumbs={false}
-                    swipeable={false}
+                    swipeable={true}
                     // selectedItem={this.state.selectedItem}
                 // transitionTime={2000}
                 // animationHandler={'slide'}
