@@ -22,7 +22,7 @@ export default [
     layout: 'portriat',
     name: "DSC00045.jpg",
     name2: "DSC00045",
-    count: 3,
+    count: 11,
   },
   {
     title: "Ceremony",
