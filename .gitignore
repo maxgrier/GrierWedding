@@ -25,3 +25,6 @@ tokens.txt
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# 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
+# run git remote set-url origin https://maxgrier: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@github.com/maxgrier/WeddingPhotos.git
