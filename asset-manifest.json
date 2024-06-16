@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/WeddingPhotos/static/css/main.7ad0d36c.css",
-    "main.js": "/WeddingPhotos/static/js/main.281bad5a.js",
+    "main.css": "/WeddingPhotos/static/css/main.9690e2ab.css",
+    "main.js": "/WeddingPhotos/static/js/main.12c2a2cc.js",
     "reactPlayerYouTube.js": "/WeddingPhotos/static/js/reactPlayerYouTube.7e69f531.chunk.js",
     "reactPlayerSoundCloud.js": "/WeddingPhotos/static/js/reactPlayerSoundCloud.b73eb999.chunk.js",
     "reactPlayerVimeo.js": "/WeddingPhotos/static/js/reactPlayerVimeo.569973ec.chunk.js",
@@ -103,11 +103,12 @@
     "static/media/DSC00060.jpg": "/WeddingPhotos/static/media/DSC00060.5de3339ac07f35d172a0.jpg",
     "static/media/DSC04690.jpg": "/WeddingPhotos/static/media/DSC04690.8a6cb602e10bbe98e4e6.jpg",
     "static/media/DSC00337.jpg": "/WeddingPhotos/static/media/DSC00337.66971686a2c965d9e134.jpg",
+    "static/media/texture_bg.jpg": "/WeddingPhotos/static/media/texture_bg.208e26ec5f953f252d3e.jpg",
     "static/media/ring_heart.jpg": "/WeddingPhotos/static/media/ring_heart.59203881f82a216522f9.jpg",
     "static/media/download-icon.jpg": "/WeddingPhotos/static/media/download-icon.4caade8a83d4ea7c87aa.jpg",
     "index.html": "/WeddingPhotos/index.html",
-    "main.7ad0d36c.css.map": "/WeddingPhotos/static/css/main.7ad0d36c.css.map",
-    "main.281bad5a.js.map": "/WeddingPhotos/static/js/main.281bad5a.js.map",
+    "main.9690e2ab.css.map": "/WeddingPhotos/static/css/main.9690e2ab.css.map",
+    "main.12c2a2cc.js.map": "/WeddingPhotos/static/js/main.12c2a2cc.js.map",
     "reactPlayerYouTube.7e69f531.chunk.js.map": "/WeddingPhotos/static/js/reactPlayerYouTube.7e69f531.chunk.js.map",
     "reactPlayerSoundCloud.b73eb999.chunk.js.map": "/WeddingPhotos/static/js/reactPlayerSoundCloud.b73eb999.chunk.js.map",
     "reactPlayerVimeo.569973ec.chunk.js.map": "/WeddingPhotos/static/js/reactPlayerVimeo.569973ec.chunk.js.map",
@@ -125,7 +126,7 @@
     "787.42023b9d.chunk.js.map": "/WeddingPhotos/static/js/787.42023b9d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7ad0d36c.css",
-    "static/js/main.281bad5a.js"
+    "static/css/main.9690e2ab.css",
+    "static/js/main.12c2a2cc.js"
   ]
 }
