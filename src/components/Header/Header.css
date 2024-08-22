@@ -1,15 +1,16 @@
 .header-outer{
     display: inline-flex;
     min-height: 75px;
-    max-height: 20vh;
-    line-height: 12vh;
+    max-height: 21vh;
+    line-height: 11vh;
     width: 100%;
     text-align: center;
     background-color: lightgrey;
     font-family: Snell Roundhand, cursive;
     font-size: 30px;
+    /* box-shadow: 0px 5px 5px grey; */
+    box-shadow: 0px 5px 5px lightgrey;
     /* font-size: 20vh; */
-    box-shadow: 0px 5px 5px grey;
     /* color: silver; */
     color: #858585;
     /* -webkit-text-stroke-width: 0.5px;
@@ -23,8 +24,11 @@
 
 .date-outer {
     height: 30px;
-    line-height: 25px;
-    font: 25px;
+    /* line-height: 25px;
+    font: 25px; */
+    line-height: 10px;
+    font-size: large;
+    display: grid;
 }
 
 .home-outer{
@@ -73,6 +77,12 @@
         /* color: red; */
     }
 
+    /* .date-outer {
+        height: 25px;
+        line-height: 12px;
+        font: 12px;
+        margin: 2px;
+    } */
     .date-outer {
         height: 25px;
         line-height: 12px;
@@ -87,7 +97,9 @@
     }
 
     .home-outer{
-        top: 2.5vh;
+        /* top: 2.5vh; */
+        top: 1px;
+        left: 1px;
     }
 
     /* .img-outer{

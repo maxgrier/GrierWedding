@@ -8,7 +8,7 @@ function FirstPhoto(){
     return (
         <div className='first-outer'>
             <div className='first-wrapper'>
-                <img src={photo}></img>
+                <img src={photo} loading={"eager"}></img>
             </div>
         </div>
     )

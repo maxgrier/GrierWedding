@@ -59,7 +59,10 @@ a {
     justify-content: center;
     align-items: center;
     /* background: lightblue; */
-    background-color: slategrey;
+
+    /* background-color: slategrey;
+    background-image: url('./components/FirstPhoto/texture_bg.jpg');
+    background-size: contain; */
 
     /* padding: 2vh 0; */
 }
@@ -126,7 +129,8 @@ a {
     justify-content: center;
     align-items: center;
     /* background: grey; */
-    background-color: slategrey;
+    /* background-color: slategrey; */
+    background-image: linear-gradient(#cbdce1, #9cb6bd, #bcd2d6, #b1c9cd);
     margin: auto;
 
     display: flex;

@@ -24,7 +24,9 @@ function Header(props) {
             <div className='title-outer'>
                 <h1>The Grier Wedding</h1>
                 <div className="date-outer">
-                    <span>7-15-2023  -  Edmonds, WA</span>
+                    <span>7-15-2023</span>
+                    <br/>
+                    <span>Edmonds, WA</span>
                 </div>
             </div>
         </div>

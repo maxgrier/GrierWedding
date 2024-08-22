@@ -12,7 +12,7 @@ export default [
     layout: 'portriat',
     name: "DSC00220.jpg",
     name2: "DSC00220",
-    count: 6,
+    count: 30,
   },
   {
     title: "Portraits",
@@ -32,7 +32,7 @@ export default [
     layout: 'portriat',
     name: "DSC00451.jpg",
     name2: "DSC00451",
-    count: 3,
+    count: 40,
   },
   // {
   //   title: "Third Slide",

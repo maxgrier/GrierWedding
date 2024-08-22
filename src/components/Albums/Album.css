@@ -59,6 +59,8 @@
     /* background-color: whitesmoke; */
     /* background-color: floralwhite; */
     background-color: #ecdfcf; /* from beach theme website: https://colorpalettes.net/color-palette-226/ */
+    /* background-image: url('./texture2.png');
+    background-size: contain; */
     padding: 20px 0;
 }
 

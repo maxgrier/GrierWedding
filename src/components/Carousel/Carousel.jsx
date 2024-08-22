@@ -83,7 +83,7 @@ export default class DemoCarousel extends Component {
 
                 </Carousel>
                 {/* Would need to change animation */}
-                {/* <span onClick={()=>this.setState({autoPlay: !this.state.autoPlay})}>pause</span> */}
+                {/* <span onClick={()=>this.setState({autoPlay: !this.state.autoPlay})}>{this.state.autoPlay ? 'pause' : 'play'}</span> */}
             </div>
 
         );
