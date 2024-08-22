@@ -66,14 +66,14 @@ export default class Gallery extends Component {
                 
                 // <img className="gallery-image" src={"https://github.com/maxgrier/WeddingPhotos/blob/main/src/assets/DSC00574.jpg?raw=true"} alt="photo" loading="eager"/>
                 
-                // <img className="gallery-image" src={"https://github.com/maxgrier/WeddingPhotos/blob/main/src/assets/DSC00574.jpg?token=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"} alt="photo" loading="eager"/>
-                // <img className="gallery-image" src={"https://github.com/maxgrier/PhotoRepo/blob/main/DSC00396.jpg?raw=true?token=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"} alt="photo" loading="eager"/>
-                // <img className="gallery-image" src={"http://maxgrier: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@github.com/maxgrier/PhotoRepo/blob/main/DSC00396.jpg?raw=true"} alt="photo" loading="eager"/>
-                // <img className="gallery-image" src={"https://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@raw.githubusercontent.com/maxgrier/PhotoRepo/blob/main/DSC00396.jpg?raw=true"} alt="photo" loading="eager"/>
+                // <img className="gallery-image" src={"https://github.com/maxgrier/WeddingPhotos/blob/main/src/assets/DSC00574.jpg?token=XXX"} alt="photo" loading="eager"/>
+                // <img className="gallery-image" src={"https://github.com/maxgrier/PhotoRepo/blob/main/DSC00396.jpg?raw=true?token=XXX"} alt="photo" loading="eager"/>
+                // <img className="gallery-image" src={"http://maxgrier:XXX@github.com/maxgrier/PhotoRepo/blob/main/DSC00396.jpg?raw=true"} alt="photo" loading="eager"/>
+                // <img className="gallery-image" src={"https://XXX@raw.githubusercontent.com/maxgrier/PhotoRepo/blob/main/DSC00396.jpg?raw=true"} alt="photo" loading="eager"/>
                 
-                // ![Private picture](https://raw.githubusercontent.com/maxgrier/PhotoRepo/blob/main/DSC00396.jpg?raw=true?token=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)
+                // ![Private picture](https://raw.githubusercontent.com/maxgrier/PhotoRepo/blob/main/DSC00396.jpg?raw=true?token=XXX)
 
-                // https://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@raw.githubusercontent.com/maxgrier/PhotoRepo/blob/main/DSC00396.jpg
+                // https://XXX@raw.githubusercontent.com/maxgrier/PhotoRepo/blob/main/DSC00396.jpg
 
                 // <img className="gallery-image" src={"https://cdn.pixabay.com/photo/2020/05/25/17/21/link-5219567_1280.jpg"} alt="" loading="eager"/>
                 
