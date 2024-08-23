@@ -78,8 +78,9 @@ export default class Gallery extends Component {
                 // <img className="gallery-image" src={"https://cdn.pixabay.com/photo/2020/05/25/17/21/link-5219567_1280.jpg"} alt="" loading="eager"/>
                 
               ) : (
-                // <img className="gallery-image" src={slide.urls} alt="" loading="lazy"/>
-                <img className="gallery-image" src={"https://github.com/maxgrier/WeddingPhotos/blob/main/src/assets/DSC00667.jpg?raw=true"} alt="photo2" loading="lazy"/>
+                // <img className="gallery-image" src={slide.urls} alt="" />
+                <img className="gallery-image" src={slide.urls} alt="" loading="lazy"/>
+                // <img className="gallery-image" src={"https://github.com/maxgrier/WeddingPhotos/blob/main/src/assets/DSC00667.jpg?raw=true"} alt="photo2" loading="lazy"/>
               )}
 
               <div className="gallery-download-outer">
