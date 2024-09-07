@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/WeddingPhotos/static/css/main.9064b80c.css",
-    "main.js": "/WeddingPhotos/static/js/main.c7d2fa61.js",
+    "main.js": "/WeddingPhotos/static/js/main.cd1d9667.js",
     "reactPlayerYouTube.js": "/WeddingPhotos/static/js/reactPlayerYouTube.7e69f531.chunk.js",
     "reactPlayerSoundCloud.js": "/WeddingPhotos/static/js/reactPlayerSoundCloud.b73eb999.chunk.js",
     "reactPlayerVimeo.js": "/WeddingPhotos/static/js/reactPlayerVimeo.569973ec.chunk.js",
@@ -70,7 +70,7 @@
     "static/media/download-icon.jpg": "/WeddingPhotos/static/media/download-icon.4caade8a83d4ea7c87aa.jpg",
     "index.html": "/WeddingPhotos/index.html",
     "main.9064b80c.css.map": "/WeddingPhotos/static/css/main.9064b80c.css.map",
-    "main.c7d2fa61.js.map": "/WeddingPhotos/static/js/main.c7d2fa61.js.map",
+    "main.cd1d9667.js.map": "/WeddingPhotos/static/js/main.cd1d9667.js.map",
     "reactPlayerYouTube.7e69f531.chunk.js.map": "/WeddingPhotos/static/js/reactPlayerYouTube.7e69f531.chunk.js.map",
     "reactPlayerSoundCloud.b73eb999.chunk.js.map": "/WeddingPhotos/static/js/reactPlayerSoundCloud.b73eb999.chunk.js.map",
     "reactPlayerVimeo.569973ec.chunk.js.map": "/WeddingPhotos/static/js/reactPlayerVimeo.569973ec.chunk.js.map",
@@ -89,6 +89,6 @@
   },
   "entrypoints": [
     "static/css/main.9064b80c.css",
-    "static/js/main.c7d2fa61.js"
+    "static/js/main.cd1d9667.js"
   ]
 }
