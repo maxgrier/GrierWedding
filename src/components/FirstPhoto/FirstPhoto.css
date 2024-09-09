@@ -7,12 +7,16 @@
     align-items: center;
     object-fit: cover;
     /* background-color: #bff5f5; */
-    background-image: url("./texture_bg.jpg");
+    /* background-image: url("./texture_bg.jpg"); */
+    background-image: linear-gradient(#cbdce1, #9cb6bd, #bcd2d6, #b1c9cd);
     background-size: contain;
+    top: -15px;
+    position: relative;
 }
 
 .first-wrapper{
     /* width: 25%; */
+    /* z-index: 10000; */
     height: 90%;
     border-radius: 50%;
     object-fit: cover;
@@ -36,4 +40,11 @@
     margin: auto;
     border: 1px solid white;
     box-shadow: 0 0 15px 2px darkgray;
+    animation-name: easeIn;
+    animation-duration: 2s;
 }
+
+@keyframes easeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }

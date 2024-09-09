@@ -7,7 +7,8 @@ function Video(props) {
   const [playInline, setPlayInline] = useState(true);
   const [isMute, setMute] = useState(true);
   // Original highlight video
-  const url = "https://www.youtube.com/watch?v=M0dLVXeBhCc";
+  // const url = "https://www.youtube.com/watch?v=M0dLVXeBhCc"; // Old video
+  const url = "https://youtu.be/-nNciOJPmto"; // new video
 
   useEffect(() => {
     // setTimeout(() => {
@@ -33,10 +34,12 @@ function Video(props) {
         <ReactPlayer
           url={url}
           playing={playing}
+          // playing={true}
           muted={isMute}
+          // muted={true}
           // muted={false}
-          width={"98%"}
-          height={"95%"}
+          width={"100%"}
+          height={"100%"}
           // playIcon={false}
           controls={true}
           playsinline={playInline}

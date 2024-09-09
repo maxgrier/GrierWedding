@@ -38,14 +38,24 @@ export default class DemoCarousel extends Component {
     }
 
     makeImages = () => {
-        return this.state.images.map((image) => {
+        return this.state.images.map((image,idx) => {
 // console.log(image)
-            return (
-                <div className={image.layout} key={this.state.key}>
-                    <img src={image.urls} alt='' />
-                    {/* <p className="legend">Legend 1</p> */}
-                </div>
-            )
+            if(idx < 5){
+                return (
+                    <div className={image.layout} key={this.state.key}>
+                        <img src={image.urls} alt='' loading={'eager'}/>
+                        {/* <p className="legend">Legend 1</p> */}
+                    </div>
+                )
+            }else{
+                return (
+                    <div className={image.layout} key={this.state.key}>
+                        <img src={image.urls} alt='' loading={'lazy'}/>
+                        {/* <p className="legend">Legend 1</p> */}
+                    </div>
+                )
+            }
+            
         })
     }
 
@@ -63,6 +73,7 @@ export default class DemoCarousel extends Component {
                     dynamicHeight={true}
                     showThumbs={false}
                     swipeable={true}
+                    showIndicators={false}
                     // selectedItem={this.state.selectedItem}
                 // transitionTime={2000}
                 // animationHandler={'slide'}

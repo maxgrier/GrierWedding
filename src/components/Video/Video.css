@@ -9,6 +9,8 @@
     justify-content: center;
     align-items: center;
     /* background-color: lightcyan; */
+    top: -15px;
+    position: relative;
 }
 
 .video-outer > div {

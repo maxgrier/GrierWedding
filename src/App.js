@@ -1,31 +1,58 @@
-import { BrowserRouter as Router, BrowserRouter, HashRouter, Link } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  BrowserRouter,
+  HashRouter,
+  Link,
+} from "react-router-dom";
 import { Route, Routes } from "react-router";
 import { createBrowserHistory } from "history";
-import { render } from 'react-dom';
+import { render } from "react-dom";
 
-import Album from './components/Albums/Albums';
-import Slider from './components/Slider/Slider'
-import Header from './components/Header/Header';
-import Gallery from './components/Gallery/Gallery';
+import Album from "./components/Albums/Albums";
+import Slider from "./components/Slider/Slider";
+import Header from "./components/Header/Header";
+import Gallery from "./components/Gallery/Gallery";
 import sliderImage from "./components/SliderImage/sliderImage";
+// import sliderImageGroups from "./components/SliderImage/albumImage";
 import sliderImageGroups from "./components/SliderImage/sliderImageGroups";
 import sliderImagePortraits from "./components/SliderImage/sliderImagePortraits";
 import sliderImageCeremony from "./components/SliderImage/sliderImageCeremony";
 
-import './App.css';
+import "./App.css";
 import DemoCarousel from "./components/Carousel/Carousel";
 import { useState, useEffect } from "react";
 import Video from "./components/Video/Video";
-import FirstPhoto from "./components/FirstPhoto/FirstPhoto"
+import FirstPhoto from "./components/FirstPhoto/FirstPhoto";
+import zip from './assets/images/WeddingPhotos.zip'
 // import zip from './assets/images/portraits/Portraits.zip'
 // import { Router, Routes, Route, Link } from 'react-router-dom';
 
+// import getFileNames from "./components/SliderImage/albumImage";
 
-const history = createBrowserHistory()
-
+const history = createBrowserHistory();
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
 
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2500);
+  }, []);
+  // let sliderImageGroups = [{}]
+  // useEffect(async ()=>{
+  //   sliderImageGroups = await getFileNames('Groups')
+  // },[])
+
+  // let allImages = sliderImageGroups + sliderImagePortraits + sliderImageCeremony
+  let allImages = [];
+  // console.log(sliderImageGroups)
+  // console.log(sliderImagePortraits)
+  // console.log(sliderImageCeremony)
+  // allImages.push(...sliderImageGroups.slice(0,30));
+  // allImages.push(...sliderImagePortraits.slice(0,30));
+  // allImages.push(...sliderImageCeremony.slice(0,30));
+  
   // const [orientation, setOrientation] = useState('')
 
   // useEffect(() => {
@@ -60,87 +87,113 @@ function App() {
         {/* <Header/> */}
         {/* If they switch from landscape to portrait, refresh page */}
         <Routes>
-          <Route exact path='/WeddingPhotos' element={
-            <>
-              <div className="App">
-                <Header />
-                <FirstPhoto/>
-                <Video/>
-                {/* <Slider sliderImage={sliderImage} album={''} /> */}
-                <div className='demo-outer'>
-                  {/* <Video/> */}
-                  <DemoCarousel images={sliderImageCeremony}/>
+          <Route
+            exact
+            path="/WeddingPhotos"
+            element={
+              <>
+                <div className="App">
+                  <Header />
+                  <FirstPhoto />
+                  <Video />
+                  {/* <Slider sliderImage={sliderImage} album={''} /> */}
+                  {/* <div className="demo-outer">
+                    {isLoading ? (
+                      <div className="loader"></div>
+                    ) : (
+                      <DemoCarousel images={allImages} />
+                    )}
+                  </div> */}
+                  <div className="line" />
+                  <div className="album-header">
+                    <h1>Albums</h1>
+                  </div>
+                  <Album />
+                  {/* Grey: #b3c3cb */}
+                  {/* <div>
+                <a href="https://raw.githubusercontent.com/maxgrier/PhotoRepo/main/Download.zip">Download</a>
+              </div> */}
+              <br></br>
+              <a href={zip} download={'Portaits'}>Download All Portraits</a>
+              <br></br>
                 </div>
-                <div className='line' />
-                <div className='album-header'>
-                  <h1>Albums</h1>
-                </div>
-                <Album />
-              </div>
-              {/* <div className='demo-outer'>
+                {/* <div className='demo-outer'>
                 <DemoCarousel />
               </div> */}
-
-            </>
-          } />
-          <Route path='/WeddingPhotos/Groups' element={
-            <>
-              <div className="App">
-                <Header notHome={true} />
-                <div className='demo-outer'>
-                  <DemoCarousel images={sliderImageGroups}/>
-                </div>
-                {/* <Slider sliderImage={sliderImageGroups} album={'images/portraits/'} /> */}
-                <div className='line' />
-                <div className='gallery-header'>
-                  <h1>Gallery</h1>
-                </div>
-                <Gallery sliderImage={sliderImageGroups} album={'images/portraits/'} />
-                {/* <a href={zip} download={'Portaits'}>Download All Portraits</a> */}
-              </div>
-            </>
-          }
+              </>
+            }
           />
-          <Route path='/WeddingPhotos/Portraits' element={
-            <>
-              <div className="App">
-                <Header notHome={true} />
-                <div className='demo-outer'>
-                  <DemoCarousel images={sliderImagePortraits}/>
+          <Route
+            path="/WeddingPhotos/Groups"
+            element={
+              <>
+                <div className="App">
+                  <Header notHome={true} />
+                  <div className="demo-outer">
+                    <DemoCarousel images={sliderImageGroups} />
+                  </div>
+                  {/* <Slider sliderImage={sliderImageGroups} album={'images/portraits/'} /> */}
+                  <div className="line" />
+                  <div className="gallery-header">
+                    <h1>Gallery</h1>
+                  </div>
+                  <Gallery
+                    sliderImage={sliderImageGroups}
+                    album={"images/portraits/"}
+                  />
+                  {/* <a href={zip} download={'Portaits'}>Download All Portraits</a> */}
                 </div>
-                {/* <Slider sliderImage={sliderImagePortraits} album={'images/portraits/'} /> */}
-                <div className='line' />
-                <div className='gallery-header'>
-                  <h1>Gallery</h1>
-                </div>
-                <Gallery sliderImage={sliderImagePortraits} album={'images/portraits/'} />
-                {/* <a href={zip} download={'Portaits'}>Download All Portraits</a> */}
-              </div>
-            </>
-          }
+              </>
+            }
           />
-          <Route path='/WeddingPhotos/Ceremony' element={
-            <>
-              <div className="App">
-                <Header notHome={true} />
-                <div className='demo-outer'>
-                  <DemoCarousel images={sliderImageCeremony}/>
+          <Route
+            path="/WeddingPhotos/Portraits"
+            element={
+              <>
+                <div className="App">
+                  <Header notHome={true} />
+                  <div className="demo-outer">
+                    <DemoCarousel images={sliderImagePortraits} />
+                  </div>
+                  {/* <Slider sliderImage={sliderImagePortraits} album={'images/portraits/'} /> */}
+                  <div className="line" />
+                  <div className="gallery-header">
+                    <h1>Gallery</h1>
+                  </div>
+                  <Gallery
+                    sliderImage={sliderImagePortraits}
+                    album={"images/portraits/"}
+                  />
+                  {/* <a href={zip} download={'Portaits'}>Download All Portraits</a> */}
                 </div>
-                {/* <Slider sliderImage={sliderImageCeremony} album={'images/ceremony/'} /> */}
-                <div className='line' />
-                <div className='gallery-header'>
-                  <h1>Gallery</h1>
+              </>
+            }
+          />
+          <Route
+            path="/WeddingPhotos/Ceremony"
+            element={
+              <>
+                <div className="App">
+                  <Header notHome={true} />
+                  <div className="demo-outer">
+                    <DemoCarousel images={sliderImageCeremony} />
+                  </div>
+                  {/* <Slider sliderImage={sliderImageCeremony} album={'images/ceremony/'} /> */}
+                  <div className="line" />
+                  <div className="gallery-header">
+                    <h1>Gallery</h1>
+                  </div>
+                  <Gallery
+                    sliderImage={sliderImageCeremony}
+                    album={"images/ceremony/"}
+                  />
                 </div>
-                <Gallery sliderImage={sliderImageCeremony} album={'images/ceremony/'} />
-                {/* <a href={zip} download={'Portaits'}>Download All Portraits</a> */}
-              </div>
-            </>
-          }
+              </>
+            }
           />
         </Routes>
       </>
     </BrowserRouter>
-
   );
 }
 

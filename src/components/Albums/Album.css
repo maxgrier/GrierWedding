@@ -3,8 +3,10 @@
     line-height: 15vh;
     font-family: Apple Chancery, cursive;
     color: white;
-    background-color: #20B2AA;
-    background-color: #81c7f8;
+    /* background-color: #20B2AA;
+    background-color: #81c7f8; */
+    /* background-image: linear-gradient(120deg, white, #81c7f8, #46a4fa); */
+    background-image: linear-gradient(0deg,#b3c3cb, #83c3cb, #83c3cb,#b4ccd0);
 
 }
 
@@ -58,9 +60,10 @@
     justify-content: space-evenly;
     /* background-color: whitesmoke; */
     /* background-color: floralwhite; */
-    background-color: #ecdfcf; /* from beach theme website: https://colorpalettes.net/color-palette-226/ */
-    /* background-image: url('./texture2.png');
-    background-size: contain; */
+    /* background-color: #ecdfcf; from beach theme website: https://colorpalettes.net/color-palette-226/ */
+    /* background-image: linear-gradient(transparent, lightgrey); */
+    background-color: #b0c6cc;
+    /* background-size: contain; */
     padding: 20px 0;
 }
 

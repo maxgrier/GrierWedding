@@ -3,6 +3,48 @@ import Portraits from "../../assets/images/portraits/DSC00045.jpg";
 import Ceremony from "../../assets/images/ceremony/DSC00451.jpg";
 import Third from "../../assets/DSC00717.jpg";
 
+// export const getFileNames = async (section) => {
+//   try {
+//     // https://api.github.com/repos/maxgrier/PhotoRepo/contents/groups
+//     // const data = fetch("https://api.github.com/repos/maxgrier/PhotoRepo/groups/git/trees/main?recursive=1")
+//     const data = await fetch(
+//       `https://api.github.com/repos/maxgrier/PhotoRepo/contents/${section}`,
+//       { headers: { Accept: "application/vnd.github+full" } }
+//     );
+//     const dataJson = await data.json();
+//     let d = await formatData(dataJson);
+//     return d;
+//   } catch (error) {
+//     console.log("error: ", error);
+//   }
+// };
+
+// let formattedData = [];
+// const formatData = async (data) => {
+//   data.map((item) => {
+//     let temp = {
+//       title: "First Slide",
+//       description: "This is the first slider Image of our carousel",
+//       urls: item.html_url + "?raw=true",
+//       layout:
+//         item.name.substring(0, item.name.length - 4).slice(-1) === "L"
+//           ? "landscape"
+//           : "portrait",
+//       name: item.name,
+//       name2: item.name.substring(0, item.name.length - 4),
+//     };
+//     formattedData.push(temp);
+//   });
+//   return formattedData;
+// };
+
+// let sections = ['']
+
+// let sliderImageCeremony = await getFileNames('Ceremony');
+// let sliderImageGroups = await getFileNames('Groups');
+// let sliderImagePortraits = await getFileNames('Portraits');
+
+
 export default [
   {
     title: "Groups",
@@ -12,7 +54,7 @@ export default [
     layout: 'portriat',
     name: "DSC00220.jpg",
     name2: "DSC00220",
-    count: 30,
+    count: 94,
   },
   {
     title: "Portraits",
@@ -22,7 +64,7 @@ export default [
     layout: 'portriat',
     name: "DSC00045.jpg",
     name2: "DSC00045",
-    count: 11,
+    count: 140,
   },
   {
     title: "Ceremony",
@@ -32,7 +74,7 @@ export default [
     layout: 'portriat',
     name: "DSC00451.jpg",
     name2: "DSC00451",
-    count: 40,
+    count: 77,
   },
   // {
   //   title: "Third Slide",
