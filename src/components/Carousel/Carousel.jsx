@@ -5,6 +5,11 @@ import { Carousel } from 'react-responsive-carousel';
 
 import sliderImageCeremony from "../SliderImage/sliderImageCeremony";
 import './Carousel.css'
+// import ImageComponent from '../ProgressiveImage/ProgressiveImage';
+import ImageComponent from "../ImageComponent/ImageComponent";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
+
 
 
 export default class DemoCarousel extends Component {
@@ -40,17 +45,22 @@ export default class DemoCarousel extends Component {
     makeImages = () => {
         return this.state.images.map((image,idx) => {
 // console.log(image)
-            if(idx < 5){
+            if(idx < 10){
                 return (
                     <div className={image.layout} key={this.state.key}>
-                        <img src={image.urls} alt='' loading={'eager'}/>
+                        <ImageComponent src={image.urls} />
+                        {/* <link rel="preload" as="image" href={image.urls}></link> */}
+                        {/* <img src={image.urls} alt='' loading={'eager'}/> */}
+                        {/* <img src={image.urls} alt='' loading={'lazy'}/> */}
+
                         {/* <p className="legend">Legend 1</p> */}
                     </div>
                 )
             }else{
                 return (
                     <div className={image.layout} key={this.state.key}>
-                        <img src={image.urls} alt='' loading={'lazy'}/>
+                        <LazyLoadImage src={image.urls} alt="Lazy loaded image" effect="blur" />
+                        {/* <img src={image.urls} alt='' loading={'lazy'}/> */}
                         {/* <p className="legend">Legend 1</p> */}
                     </div>
                 )

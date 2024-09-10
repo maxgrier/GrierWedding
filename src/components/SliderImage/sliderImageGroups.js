@@ -1,9 +1,9 @@
-import First from "../../assets/images/groups/DSC00220.jpg";
-import Second from "../../assets/images/groups/DSC00317.jpg";
-import Third from "../../assets/images/groups/DSC00337.jpg";
-import Fourth from "../../assets/images/groups/DSC00364.jpg";
-import Fifth from "../../assets/images/groups/DSC00537.jpg";
-import Sixth from "../../assets/images/groups/DSC04655.jpg";
+// import First from "../../assets/images/groups/DSC00220.jpg";
+// import Second from "../../assets/images/groups/DSC00317.jpg";
+// import Third from "../../assets/images/groups/DSC00337.jpg";
+// import Fourth from "../../assets/images/groups/DSC00364.jpg";
+// import Fifth from "../../assets/images/groups/DSC00537.jpg";
+// import Sixth from "../../assets/images/groups/DSC04655.jpg";
 
 const getFileNames = async () => {
   try {

@@ -20,6 +20,13 @@
     margin: 1%;
 }
 
+.slide > div > span > img{
+  border-radius: 10px;
+  /* box-shadow: 0px 0px 20px black; */
+  box-shadow: 0px 0px 15px 1px black;
+  margin: 1%;
+}
+
 .slider-wrapper .axis-horizontal {
     height: 100% !important;
     padding: 10px;

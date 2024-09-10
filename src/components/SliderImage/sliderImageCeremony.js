@@ -39,7 +39,7 @@ const formatData = async (data) => {
     };
     formattedData.push(temp);
   });
-  console.log("formatted data ", formattedData);
+  // console.log("formatted data ", formattedData);
   return formattedData;
 };
 

@@ -6,6 +6,8 @@ import ring from "../../assets/images/ring_heart.jpg";
 import "./Gallery.css";
 // import { isFormElement } from "react-router-dom/dist/dom";
 import ProgressiveImage from "react-graceful-image";
+import ImageComponent from "../ImageComponent/ImageComponent";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export default class Gallery extends Component {
   state = {
@@ -88,7 +90,7 @@ export default class Gallery extends Component {
     return img;
   };
 
-  makeRows2 = (start, end) => {
+  makeRows2 = async (start, end) => {
     // function isVisibleInViewPort(e) {
     //   var viewTop = window.scrollTop();
     //   var viewBottom = viewTop + window.height();
@@ -124,12 +126,14 @@ export default class Gallery extends Component {
                       : { display: "none" }
                   }
                 >
-                    <img
+                    <ImageComponent src={slide.urls} className="gallery-image first"/>
+
+                    {/* <img
                       className="gallery-image"
                       src={slide.urls}
                       alt="Problem loading image..."
                       loading="eager"
-                    />
+                    /> */}
                   
                 </div>
               </>
@@ -146,17 +150,17 @@ export default class Gallery extends Component {
                       : { display: "none" }
                   }
                 >
-                  
-                    <img
+                  <LazyLoadImage className="gallery-image" src={slide.urls} alt="Lazy loaded image" effect="blur" />
+
+                    {/* <img
                       className="gallery-image"
                       src={slide.urls}
                       alt="Problem loading image..."
-    
                       // onLoad={() => {
                       //   console.log("loded ", slide.urls);
                       // }}
                       // loading={"lazy"}
-                    />
+                    /> */}
                 </div>
               </>
             );
@@ -223,13 +227,15 @@ export default class Gallery extends Component {
                   : { display: "none" }
               }
             >
-              {idx <= 10 ? (
-                <img
-                  className="gallery-image"
-                  src={slide.urls}
-                  alt="Problem loading image..."
-                  loading="eager"
-                />
+              {idx < 10 ? (
+                // <link rel="preload" as="image" href={image.urls}></link>
+                <ImageComponent src={slide.urls} className="gallery-image"/>
+                // <img
+                //   className="gallery-image"
+                //   src={slide.urls}
+                //   alt="Problem loading image..."
+                //   loading="eager"
+                // />
               ) : (
                 // <img className="gallery-image" src={"https://github.com/maxgrier/WeddingPhotos/blob/main/src/assets/DSC00574.jpg?raw=true"} alt="photo" loading="eager"/>
 
@@ -245,15 +251,16 @@ export default class Gallery extends Component {
                 // <img className="gallery-image" src={"https://cdn.pixabay.com/photo/2020/05/25/17/21/link-5219567_1280.jpg"} alt="" loading="eager"/>
 
                 // <img className="gallery-image" src={slide.urls} alt="" />
+                <LazyLoadImage className="gallery-image" id="lazy" src={slide.url} alt="Lazy loaded image" effect="blur" />
 
-                <img
-                  className="gallery-image"
-                  src={slide.urls}
-                  onLoad={() => {
-                    console.log("loded ", slide.urls);
-                  }}
-                  loading={"lazy"}
-                />
+                // <img
+                //   className="gallery-image"
+                //   src={slide.urls}
+                //   onLoad={() => {
+                //     console.log("loded ", slide.urls);
+                //   }}
+                //   loading={"lazy"}
+                // />
                 // <ProgressiveImage src={slide.urls} placeholder={ring}>
                 //   {(src, loading) => (
                 //     <img
@@ -353,45 +360,46 @@ export default class Gallery extends Component {
     // await this.increaseLimit(20)
 
     setTimeout(async () => {
+      await this.makeRows2(this.state.showLow, this.state.showLimit);
+      this.setState({ showLow: 10, showLimit: 20 });
       this.setState({ doRows: true });
-      this.makeRows2(this.state.showLow, this.state.showLimit);
 
       setTimeout(async () => {
-        this.makeRows2(this.state.showLow, this.state.showLimit);
-        this.setState({ showLow: 10, showLimit: 20 });
-        console.log("limit ", this.state.showLimit);
+        await this.makeRows2(this.state.showLow, this.state.showLimit);
+        this.setState({ showLow: 20, showLimit: 30 });
+        // console.log("limit ", this.state.showLimit);
         setTimeout(async () => {
           this.makeRows2(this.state.showLow, this.state.showLimit);
-          this.setState({ showLow: 20, showLimit: 30 });
-          console.log("limit ", this.state.showLimit);
+          this.setState({ showLow: 30, showLimit: 40 });
+          // console.log("limit ", this.state.showLimit);
           setTimeout(async () => {
             this.makeRows2(this.state.showLow, this.state.showLimit);
-            this.setState({ showLow: 30, showLimit: 40 });
-            console.log("limit ", this.state.showLimit);
+            this.setState({ showLow: 40, showLimit: 50 });
+            // console.log("limit ", this.state.showLimit);
             setTimeout(async () => {
               this.makeRows2(this.state.showLow, this.state.showLimit);
-              this.setState({ showLow: 40, showLimit: 50 });
-              console.log("limit ", this.state.showLimit);
+              this.setState({ showLow: 50, showLimit: 60 });
+              // console.log("limit ", this.state.showLimit);
               setTimeout(async () => {
                 this.makeRows2(this.state.showLow, this.state.showLimit);
-                this.setState({ showLow: 50, showLimit: 60 });
-                console.log("limit ", this.state.showLimit);
+                this.setState({ showLow: 60, showLimit: 70 });
+                // console.log("limit ", this.state.showLimit);
                 setTimeout(async () => {
                   this.makeRows2(this.state.showLow, this.state.showLimit);
-                  this.setState({ showLow: 60, showLimit: 70 });
-                  console.log("limit ", this.state.showLimit);
+                  this.setState({ showLow: 70, showLimit: 80 });
+                  // console.log("limit ", this.state.showLimit);
                   setTimeout(async () => {
                     this.makeRows2(this.state.showLow, this.state.showLimit);
-                    this.setState({ showLow: 70, showLimit: 80 });
-                    console.log("limit ", this.state.showLimit);
+                    this.setState({ showLow: 80, showLimit: 90 });
+                    // console.log("limit ", this.state.showLimit);
                     setTimeout(async () => {
                       this.makeRows2(this.state.showLow, this.state.showLimit);
-                      this.setState({ showLow: 80, showLimit: 90 });
-                      console.log("limit ", this.state.showLimit);
+                      this.setState({ showLow: 90, showLimit: 100 });
+                      // console.log("limit ", this.state.showLimit);
                       setTimeout(async () => {
                         this.makeRows2(this.state.showLow, this.state.showLimit);
-                        this.setState({ showLow: 90, showLimit: 200 });
-                        console.log("limit ", this.state.showLimit);
+                        this.setState({ showLow: 100, showLimit: 200 });
+                        // console.log("limit ", this.state.showLimit);
                         setTimeout(() => {
                           this.makeRows2(this.state.showLow, this.state.showLimit);
                         }, 10000);
@@ -436,7 +444,8 @@ export default class Gallery extends Component {
             </option>
           </select> */}
         {/* </div> */}
-        <div className="gallery-row" key={this.state.showLimit}>
+        {/* <div className="gallery-row" key={this.state.showLimit}> */}
+        <div className="gallery-row" >
           {/* {this.makeRows()} */}
           {this.state.doRows ? (
             // this.makeRows2(this.state.showLow, this.state.showLimit)

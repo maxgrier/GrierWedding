@@ -1,6 +1,10 @@
-import Groups from "../../assets/images/groups/DSC00220.jpg";
-import Portraits from "../../assets/images/portraits/DSC00045.jpg";
-import Ceremony from "../../assets/images/ceremony/DSC00451.jpg";
+// import Groups from "../../assets/images/groups/DSC00220.jpg";
+import Groups from "../../assets/images/groups/DSC00632.jpg";
+// import Portraits from "../../assets/images/Portraits/DSC00045.jpg";
+import Portraits from "../../assets/images/Portraits/DSC00178.jpg";
+// import Ceremony from "../../assets/images/ceremony/DSC00451.jpg";
+import Ceremony from "../../assets/images/ceremony/DSC04915.jpg";
+
 import Third from "../../assets/DSC00717.jpg";
 
 // export const getFileNames = async (section) => {
@@ -52,8 +56,10 @@ export default [
     description: "This is the first slider Image of our carousel",
     urls: Groups,
     layout: 'portriat',
-    name: "DSC00220.jpg",
-    name2: "DSC00220",
+    // name: "DSC00220.jpg",
+    // name2: "DSC00220",
+    name: "DSC00632.jpg",
+    name2: "DSC00632",
     count: 94,
   },
   {
@@ -62,8 +68,10 @@ export default [
     description: "This is the second slider Image of our carousel",
     urls: Portraits,
     layout: 'portriat',
-    name: "DSC00045.jpg",
-    name2: "DSC00045",
+    // name: "DSC00045.jpg",
+    // name2: "DSC00045",
+    name: "DSC00178.jpg",
+    name2: "DSC00178",
     count: 140,
   },
   {
@@ -72,8 +80,10 @@ export default [
     description: "This is the second slider Image of our carousel",
     urls: Ceremony,
     layout: 'portriat',
-    name: "DSC00451.jpg",
-    name2: "DSC00451",
+    // name: "DSC00451.jpg",
+    // name2: "DSC00451",
+    name: "DSC04915.jpg",
+    name2: "DSC04915",
     count: 77,
   },
   // {
