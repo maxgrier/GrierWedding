@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/WeddingPhotos/static/css/main.85325f3a.css",
-    "main.js": "/WeddingPhotos/static/js/main.44db061e.js",
+    "main.js": "/WeddingPhotos/static/js/main.4e896bbe.js",
     "reactPlayerYouTube.js": "/WeddingPhotos/static/js/reactPlayerYouTube.7e69f531.chunk.js",
     "reactPlayerSoundCloud.js": "/WeddingPhotos/static/js/reactPlayerSoundCloud.b73eb999.chunk.js",
     "reactPlayerVimeo.js": "/WeddingPhotos/static/js/reactPlayerVimeo.569973ec.chunk.js",
@@ -89,6 +89,7 @@
     "static/media/DSC09959.jpg": "/WeddingPhotos/static/media/DSC09959.3336f644eaf0acfcd17a.jpg",
     "static/media/DSC00540.jpg": "/WeddingPhotos/static/media/DSC00540.51ee6bc32e9c5de68ac5.jpg",
     "static/media/DSC01061.jpg": "/WeddingPhotos/static/media/DSC01061.93cff875d3e8090cf51e.jpg",
+    "static/media/DSC04915.jpg": "/WeddingPhotos/static/media/DSC04915.4b73540e71a338e88056.jpg",
     "static/media/DSC01251.jpg": "/WeddingPhotos/static/media/DSC01251.07ac6e18b66d6b074c76.jpg",
     "static/media/DSC04968.jpg": "/WeddingPhotos/static/media/DSC04968.ad9dd24ab367bd4382fe.jpg",
     "static/media/DSC01022.jpg": "/WeddingPhotos/static/media/DSC01022.0184565d06725bfe32fa.jpg",
@@ -166,6 +167,7 @@
     "static/media/DSC01043.jpg": "/WeddingPhotos/static/media/DSC01043.f2e621bc092e02340715.jpg",
     "static/media/DSC00364.jpg": "/WeddingPhotos/static/media/DSC00364.6ef7dd77035543e87011.jpg",
     "static/media/DSC01003.jpg": "/WeddingPhotos/static/media/DSC01003.5421f9d2563a052162cd.jpg",
+    "static/media/DSC00632.jpg": "/WeddingPhotos/static/media/DSC00632.d1fb3c8e2f8001e078b9.jpg",
     "static/media/DSC00491.jpg": "/WeddingPhotos/static/media/DSC00491.11f1944beb3a4eee5e66.jpg",
     "static/media/DSC00492.jpg": "/WeddingPhotos/static/media/DSC00492.b83c439fe7b392d17291.jpg",
     "static/media/DSC00886.jpg": "/WeddingPhotos/static/media/DSC00886.5d4e2c303d1e875f1232.jpg",
@@ -197,7 +199,7 @@
     "static/media/download-icon.jpg": "/WeddingPhotos/static/media/download-icon.4caade8a83d4ea7c87aa.jpg",
     "index.html": "/WeddingPhotos/index.html",
     "main.85325f3a.css.map": "/WeddingPhotos/static/css/main.85325f3a.css.map",
-    "main.44db061e.js.map": "/WeddingPhotos/static/js/main.44db061e.js.map",
+    "main.4e896bbe.js.map": "/WeddingPhotos/static/js/main.4e896bbe.js.map",
     "reactPlayerYouTube.7e69f531.chunk.js.map": "/WeddingPhotos/static/js/reactPlayerYouTube.7e69f531.chunk.js.map",
     "reactPlayerSoundCloud.b73eb999.chunk.js.map": "/WeddingPhotos/static/js/reactPlayerSoundCloud.b73eb999.chunk.js.map",
     "reactPlayerVimeo.569973ec.chunk.js.map": "/WeddingPhotos/static/js/reactPlayerVimeo.569973ec.chunk.js.map",
@@ -216,6 +218,6 @@
   },
   "entrypoints": [
     "static/css/main.85325f3a.css",
-    "static/js/main.44db061e.js"
+    "static/js/main.4e896bbe.js"
   ]
 }
