@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/GrierWedding/static/css/main.499eb64c.css",
+    "main.css": "/GrierWedding/static/css/main.51e5a5ea.css",
     "main.js": "/GrierWedding/static/js/main.316bfb59.js",
     "reactPlayerYouTube.js": "/GrierWedding/static/js/reactPlayerYouTube.7e69f531.chunk.js",
     "reactPlayerSoundCloud.js": "/GrierWedding/static/js/reactPlayerSoundCloud.b73eb999.chunk.js",
@@ -173,7 +173,7 @@
     "static/media/ring_heart.jpg": "/GrierWedding/static/media/ring_heart.59203881f82a216522f9.jpg",
     "static/media/download-icon.jpg": "/GrierWedding/static/media/download-icon.4caade8a83d4ea7c87aa.jpg",
     "index.html": "/GrierWedding/index.html",
-    "main.499eb64c.css.map": "/GrierWedding/static/css/main.499eb64c.css.map",
+    "main.51e5a5ea.css.map": "/GrierWedding/static/css/main.51e5a5ea.css.map",
     "main.316bfb59.js.map": "/GrierWedding/static/js/main.316bfb59.js.map",
     "reactPlayerYouTube.7e69f531.chunk.js.map": "/GrierWedding/static/js/reactPlayerYouTube.7e69f531.chunk.js.map",
     "reactPlayerSoundCloud.b73eb999.chunk.js.map": "/GrierWedding/static/js/reactPlayerSoundCloud.b73eb999.chunk.js.map",
@@ -192,7 +192,7 @@
     "787.42023b9d.chunk.js.map": "/GrierWedding/static/js/787.42023b9d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.499eb64c.css",
+    "static/css/main.51e5a5ea.css",
     "static/js/main.316bfb59.js"
   ]
 }
