@@ -4,6 +4,7 @@ import Groups from "../../assets/images/groups/DSC00632.jpg";
 import Portraits from "../../assets/images/Portraits/DSC00178.jpg";
 // import Ceremony from "../../assets/images/ceremony/DSC00451.jpg";
 import Ceremony from "../../assets/images/ceremony/DSC04915.jpg";
+import Reception from "../../assets/images/Reception/DSC05221.jpg";
 
 import Third from "../../assets/DSC00717.jpg";
 
@@ -51,20 +52,8 @@ import Third from "../../assets/DSC00717.jpg";
 
 export default [
   {
-    title: "Groups",
-    link: "/WeddingPhotos/Groups",
-    description: "This is the first slider Image of our carousel",
-    urls: Groups,
-    layout: 'portriat',
-    // name: "DSC00220.jpg",
-    // name2: "DSC00220",
-    name: "DSC00632.jpg",
-    name2: "DSC00632",
-    count: 94,
-  },
-  {
     title: "Portraits",
-    link: "/WeddingPhotos/Portraits",
+    link: "/GrierWedding/Portraits",
     description: "This is the second slider Image of our carousel",
     urls: Portraits,
     layout: 'portriat',
@@ -75,8 +64,20 @@ export default [
     count: 140,
   },
   {
+    title: "Groups",
+    link: "/GrierWedding/Groups",
+    description: "This is the first slider Image of our carousel",
+    urls: Groups,
+    layout: 'portriat',
+    // name: "DSC00220.jpg",
+    // name2: "DSC00220",
+    name: "DSC00632.jpg",
+    name2: "DSC00632",
+    count: 94,
+  },
+  {
     title: "Ceremony",
-    link: "/WeddingPhotos/Ceremony",
+    link: "/GrierWedding/Ceremony",
     description: "This is the second slider Image of our carousel",
     urls: Ceremony,
     layout: 'portriat',
@@ -85,6 +86,18 @@ export default [
     name: "DSC04915.jpg",
     name2: "DSC04915",
     count: 77,
+  },
+  {
+    title: "Reception",
+    link: "/GrierWedding/Reception",
+    description: "This is the second slider Image of our carousel",
+    urls: Reception,
+    layout: 'portriat',
+    // name: "DSC00451.jpg",
+    // name2: "DSC00451",
+    name: "DSC05221.jpg",
+    name2: "DSC05221",
+    count: 182,
   },
   // {
   //   title: "Third Slide",

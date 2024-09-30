@@ -35,6 +35,7 @@ body{
   height: 5px;
   border-top: 7px outset lightgrey;
   line-height: 80%;
+  z-index:90;
 }
 
 @media (prefers-reduced-motion: no-preference) {

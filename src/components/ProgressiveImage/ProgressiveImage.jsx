@@ -1,7 +1,8 @@
+import { memo } from 'react';
 import {ProgressiveImage} from 'react-progressive-image';
 import {shimmer} from 'react-graceful-image';
 
-const ImageComponent = ({src, placeholder, delay})=>{
+const ImageComponent = memo(function ImageComponent({src, placeholder, delay})=>{
     return(
         <ProgressiveImage
             src={src}
@@ -15,6 +16,6 @@ const ImageComponent = ({src, placeholder, delay})=>{
             )}
         </ProgressiveImage>
     )
-}
+})
 
 export default ImageComponent;

@@ -8,6 +8,7 @@ import "./Gallery.css";
 import ProgressiveImage from "react-graceful-image";
 import ImageComponent from "../ImageComponent/ImageComponent";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import LazyLoadImageComponent from "../LazyLoadImageComponent/LazyLoadImageComponent"
 
 export default class Gallery extends Component {
   state = {
@@ -125,6 +126,7 @@ export default class Gallery extends Component {
                       ? { display: "true" }
                       : { display: "none" }
                   }
+                  key={idx}
                 >
                     <ImageComponent src={slide.urls} className="gallery-image first"/>
 
@@ -149,8 +151,10 @@ export default class Gallery extends Component {
                       ? { display: "true" }
                       : { display: "none" }
                   }
+                  key={idx}
                 >
-                  <LazyLoadImage className="gallery-image" src={slide.urls} alt="Lazy loaded image" effect="blur" />
+                <LazyLoadImageComponent className="gallery-image" picClass={"gallery-image"} src={slide.urls} alt="Lazy loaded image" effect="blur" />
+                  {/* <LazyLoadImage className="gallery-image" src={slide.urls} alt="Lazy loaded image" effect="blur" /> */}
 
                     {/* <img
                       className="gallery-image"
@@ -202,7 +206,7 @@ export default class Gallery extends Component {
       }
       // setTimeout(() => {
 
-      console.log("returning more images");
+      // console.log("returning more images");
       this.setState({ els2: [...this.state.els2, ...els] });
       // return els2;
       // }, 200);
@@ -354,6 +358,7 @@ export default class Gallery extends Component {
   // };
 
   componentDidMount = async () => {
+    // console.log('gallery ', this.props)
     // let sliderImageGroups = await this.getFileNames();
     // this.setState({ sliderImages: sliderImageGroups });
     this.setState({ sliderImages: this.props.sliderImage });

@@ -8,6 +8,11 @@ import './Carousel.css'
 // import ImageComponent from '../ProgressiveImage/ProgressiveImage';
 import ImageComponent from "../ImageComponent/ImageComponent";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import LazyLoadImageComponent from "../LazyLoadImageComponent/LazyLoadImageComponent";
+import Font from 'react-font';
+
+import pauseButton from '../../assets/images/carousel/pause_button.png';
+import playButton from '../../assets/images/carousel/play_button.png';
 
 
 
@@ -17,9 +22,11 @@ export default class DemoCarousel extends Component {
     state = {
         images: [],
         key: 0,
+        wasAutoPlay: true,
         autoPlay: true,
 
         selectedItem:0,
+        id: 'playing'
     }
 
     componentDidUpdate(prevProps){
@@ -42,12 +49,28 @@ export default class DemoCarousel extends Component {
         // }, 1000);
     }
 
+    // Make for smoother transition between pause and play 
+    getId = () => {
+        if(this.state.wasAutoPlay === false && this.state.autoPlay === true){
+            this.setState({id: 'playing-temp'}) 
+            setTimeout(() => {
+                this.setState({id: 'playing'}) 
+            }, 7500);
+        }else if(this.state.wasAutoPlay === true && this.state.autoPlay === true){
+                this.setState({id: 'playing'}) 
+        }else if(this.state.autoPlay === false){
+                this.setState({id: 'paused'}) 
+        }else{
+            this.setState({id: 'playing'}) 
+        }
+    }
     makeImages = () => {
         return this.state.images.map((image,idx) => {
 // console.log(image)
-            if(idx < 10){
+            if(idx < 15){
                 return (
-                    <div className={image.layout} key={this.state.key}>
+                    // <div className={image.layout} id={this.state.autoPlay ? 'playing' : 'paused'} key={this.state.key} onClick={()=>this.setState({autoPlay: !this.state.autoPlay})}>
+                    <div className={image.layout} id={this.state.id} key={this.state.key} onClick={()=>this.setState({autoPlay: !this.state.autoPlay})}>
                         <ImageComponent src={image.urls} />
                         {/* <link rel="preload" as="image" href={image.urls}></link> */}
                         {/* <img src={image.urls} alt='' loading={'eager'}/> */}
@@ -58,8 +81,15 @@ export default class DemoCarousel extends Component {
                 )
             }else{
                 return (
-                    <div className={image.layout} key={this.state.key}>
-                        <LazyLoadImage src={image.urls} alt="Lazy loaded image" effect="blur" />
+                    // <div className={image.layout} id={this.state.autoPlay ? 'playing' : 'paused'} key={this.state.key} onClick={()=>this.setState({autoPlay: !this.state.autoPlay})}>
+                    <div className={image.layout} id={this.state.id} key={this.state.key} >
+                        {/* <ImageComponent src={image.urls} /> */}
+                        
+                        {/* <LazyLoadImage src={image.urls} alt="Lazy loaded image" effect="blur" /> */}
+                        <LazyLoadImageComponent  src={image.urls} alt="Lazy loaded image"  />
+
+                        {/* <LazyLoadImageComponent src={image.urls} alt="Lazy loaded image" effect="blur" /> */}
+
                         {/* <img src={image.urls} alt='' loading={'lazy'}/> */}
                         {/* <p className="legend">Legend 1</p> */}
                     </div>
@@ -84,6 +114,8 @@ export default class DemoCarousel extends Component {
                     showThumbs={false}
                     swipeable={true}
                     showIndicators={false}
+                    // onClick={()=>{console.log('click')}}
+                    // onHover={()=>{console.log('hover')}}
                     // selectedItem={this.state.selectedItem}
                 // transitionTime={2000}
                 // animationHandler={'slide'}
@@ -104,7 +136,17 @@ export default class DemoCarousel extends Component {
 
                 </Carousel>
                 {/* Would need to change animation */}
-                {/* <span onClick={()=>this.setState({autoPlay: !this.state.autoPlay})}>{this.state.autoPlay ? 'pause' : 'play'}</span> */}
+                <Font family="Great Vibes">
+                    <span className={'pause-play-text'} onClick={()=>this.setState({wasAutoPlay: this.state.autoPlay, autoPlay: !this.state.autoPlay},()=>this.getId())}>
+                {this.state.autoPlay 
+                // ? <img src={pauseButton}/> 
+                ? 'pause'
+                // : <img src={playButton}/> 
+                : 'play'
+                }
+                </span>
+                </Font>
+
             </div>
 
         );

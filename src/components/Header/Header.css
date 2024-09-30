@@ -19,6 +19,7 @@
   /* -webkit-text-stroke-width: 0.5px;
     -webkit-text-stroke-color: grey;
     text-shadow: 4px 5px 2px white; */
+    padding-top: 5px;
 }
 
 .title-outer {

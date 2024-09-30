@@ -1,0 +1,16 @@
+.scroll-to-top{
+    position: fixed;
+    bottom: 7%;
+    right: 1%;
+    background-image: url('../../assets/images/up_arrow.png');
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+    border-radius: 10px;
+    opacity: 0.8;
+    z-index: 100000;
+}
+
+.scroll-to-top:hover{
+    cursor: pointer;
+}

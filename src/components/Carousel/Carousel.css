@@ -56,6 +56,8 @@
   }
   @keyframes easeInOut {
     0% {opacity: 0;}
+    /* 0% {opacity: 1;} */
+    /* 20% {opacity: 0.5;} */
     40% {opacity: 1;}
     50% {opacity: 1;}
     90% {opacity: 1;}
@@ -64,8 +66,14 @@
   }
 
   @keyframes easeOut {
-    from {opacity: 1;}
-    to {opacity: 0;}
+    /* from {opacity: 1;}
+    to {opacity: 0;} */
+    0% {opacity: 1;}
+    40% {opacity: 1;}
+    50% {opacity: 1;}
+    90% {opacity: 1;}
+    /* 100% {opacity: 1;} */
+    100% {opacity: 0;}
     /* to {opacity: 0;display: none;} */
   }
 
@@ -74,8 +82,11 @@
     to {display: none;visibility: hidden;}
   }
 
-  
-  .slide.selected {
+  .slide.selected #playing-temp{
+    animation-name: easeOut;
+    animation-duration: 8s;
+  }
+  .slide.selected #playing{
     animation-name: easeInOut;
     animation-duration: 8s;
     /* transition-timing-function: ease-in-out;
@@ -124,6 +135,20 @@
 .landscape {
     margin-top: 0.25%;
 } */
+
+.pause-play-text{
+  display: flex;
+  justify-content: end;
+  margin: 5px 2.5% 5px auto;
+  font-size: large;
+  width: fit-content;
+  position: relative;
+  z-index: 100;
+}
+
+.pause-play-text:hover{
+  cursor: pointer;
+}
 
 @media(min-width: 1000px){
     .carousel.carousel-slider .control-arrow {

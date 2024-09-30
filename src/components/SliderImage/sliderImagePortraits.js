@@ -29,19 +29,19 @@ let formattedData = [];
 const formatData = async (data) => {
   data.map((item, idx) => {
     // if (idx < 150) {
-      let temp = {
-        // title: "First Slide",
-        // description: "This is the first slider Image of our carousel",
-        // urls: item.html_url + "?raw=true",
-        urls: require("../../assets/images/Portraits/" + item.name + ""),
-        layout:
-          item.name.substring(0, item.name.length - 4).slice(-1) === "L"
-            ? "landscape"
-            : "portrait",
-        name: item.name,
-        // name2: item.name.substring(0, item.name.length - 4),
-      };
-      formattedData.push(temp);
+    let temp = {
+      // title: "First Slide",
+      // description: "This is the first slider Image of our carousel",
+      // urls: item.html_url + "?raw=true",
+      urls: require("../../assets/images/Portraits/" + item.name + ""),
+      layout:
+        item.name.substring(0, item.name.length - 4).slice(-1) === "L"
+          ? "landscape"
+          : "portrait",
+      name: item.name,
+      // name2: item.name.substring(0, item.name.length - 4),
+    };
+    formattedData.push(temp);
     // }
   });
 
@@ -53,6 +53,517 @@ const formatData = async (data) => {
 // export default sliderImagePortraits;
 
 let sliderImagePortraits = [
+  {
+    name: "DSC09929.jpg",
+    path: "Portraits/DSC09929.jpg",
+    sha: "6beb6a290b3d26566cd9278a6dfe92d07ad951a6",
+    size: 8467395,
+    url:
+      "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09929.jpg?ref=main",
+    html_url:
+      "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09929.jpg",
+    git_url:
+      "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/6beb6a290b3d26566cd9278a6dfe92d07ad951a6",
+    download_url:
+      "https://raw.githubusercontent.com/maxgrier/PhotoRepo/main/Portraits/DSC09929.jpg",
+    type: "file",
+    _links: {
+      self:
+        "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09929.jpg?ref=main",
+      git:
+        "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/6beb6a290b3d26566cd9278a6dfe92d07ad951a6",
+      html:
+        "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09929.jpg",
+    },
+  },
+  {
+    name: "DSC09934.jpg",
+    path: "Portraits/DSC09934.jpg",
+    sha: "3b43f568be24010dbc2b52d732f31586a71e2d23",
+    size: 7752728,
+    url:
+      "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09934.jpg?ref=main",
+    html_url:
+      "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09934.jpg",
+    git_url:
+      "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/3b43f568be24010dbc2b52d732f31586a71e2d23",
+    download_url:
+      "https://raw.githubusercontent.com/maxgrier/PhotoRepo/main/Portraits/DSC09934.jpg",
+    type: "file",
+    _links: {
+      self:
+        "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09934.jpg?ref=main",
+      git:
+        "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/3b43f568be24010dbc2b52d732f31586a71e2d23",
+      html:
+        "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09934.jpg",
+    },
+  },
+  {
+    name: "DSC09937.jpg",
+    path: "Portraits/DSC09937.jpg",
+    sha: "ccba87982ab98316c6ec6d66c10ab9bd680bc7f9",
+    size: 8126941,
+    url:
+      "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09937.jpg?ref=main",
+    html_url:
+      "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09937.jpg",
+    git_url:
+      "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/ccba87982ab98316c6ec6d66c10ab9bd680bc7f9",
+    download_url:
+      "https://raw.githubusercontent.com/maxgrier/PhotoRepo/main/Portraits/DSC09937.jpg",
+    type: "file",
+    _links: {
+      self:
+        "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09937.jpg?ref=main",
+      git:
+        "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/ccba87982ab98316c6ec6d66c10ab9bd680bc7f9",
+      html:
+        "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09937.jpg",
+    },
+  },
+  {
+    name: "DSC09938.jpg",
+    path: "Portraits/DSC09938.jpg",
+    sha: "9ad987ad7f5ecbee24f1b30d616ce8aa113a5c65",
+    size: 7809338,
+    url:
+      "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09938.jpg?ref=main",
+    html_url:
+      "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09938.jpg",
+    git_url:
+      "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/9ad987ad7f5ecbee24f1b30d616ce8aa113a5c65",
+    download_url:
+      "https://raw.githubusercontent.com/maxgrier/PhotoRepo/main/Portraits/DSC09938.jpg",
+    type: "file",
+    _links: {
+      self:
+        "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09938.jpg?ref=main",
+      git:
+        "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/9ad987ad7f5ecbee24f1b30d616ce8aa113a5c65",
+      html:
+        "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09938.jpg",
+    },
+  },
+  {
+    name: "DSC09948.jpg",
+    path: "Portraits/DSC09948.jpg",
+    sha: "b7c34580c0c7ef7956a1989d34739ce9e9eadeaf",
+    size: 5891500,
+    url:
+      "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09948.jpg?ref=main",
+    html_url:
+      "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09948.jpg",
+    git_url:
+      "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/b7c34580c0c7ef7956a1989d34739ce9e9eadeaf",
+    download_url:
+      "https://raw.githubusercontent.com/maxgrier/PhotoRepo/main/Portraits/DSC09948.jpg",
+    type: "file",
+    _links: {
+      self:
+        "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09948.jpg?ref=main",
+      git:
+        "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/b7c34580c0c7ef7956a1989d34739ce9e9eadeaf",
+      html:
+        "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09948.jpg",
+    },
+  },
+  {
+    name: "DSC09952.jpg",
+    path: "Portraits/DSC09952.jpg",
+    sha: "9cad43c69463c687b43d8a0a6a96f62f988626fc",
+    size: 5965000,
+    url:
+      "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09952.jpg?ref=main",
+    html_url:
+      "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09952.jpg",
+    git_url:
+      "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/9cad43c69463c687b43d8a0a6a96f62f988626fc",
+    download_url:
+      "https://raw.githubusercontent.com/maxgrier/PhotoRepo/main/Portraits/DSC09952.jpg",
+    type: "file",
+    _links: {
+      self:
+        "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09952.jpg?ref=main",
+      git:
+        "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/9cad43c69463c687b43d8a0a6a96f62f988626fc",
+      html:
+        "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09952.jpg",
+    },
+  },
+  {
+    name: "DSC09959.jpg",
+    path: "Portraits/DSC09959.jpg",
+    sha: "e71c60591ad0a47ae6025cdc0a962e46dc7673ee",
+    size: 6516758,
+    url:
+      "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09959.jpg?ref=main",
+    html_url:
+      "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09959.jpg",
+    git_url:
+      "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/e71c60591ad0a47ae6025cdc0a962e46dc7673ee",
+    download_url:
+      "https://raw.githubusercontent.com/maxgrier/PhotoRepo/main/Portraits/DSC09959.jpg",
+    type: "file",
+    _links: {
+      self:
+        "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09959.jpg?ref=main",
+      git:
+        "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/e71c60591ad0a47ae6025cdc0a962e46dc7673ee",
+      html:
+        "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09959.jpg",
+    },
+  },
+
+  // insert here
+  // Mine here
+  {
+    name: "DSC00126.jpg",
+    path: "Portraits/DSC00126.jpg",
+    sha: "319835252fe62309abc48257157e3ad68e08678a",
+    size: 5468598,
+    url:
+      "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC00126.jpg?ref=main",
+    html_url:
+      "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC00126.jpg",
+    git_url:
+      "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/319835252fe62309abc48257157e3ad68e08678a",
+    download_url:
+      "https://raw.githubusercontent.com/maxgrier/PhotoRepo/main/Portraits/DSC00126.jpg",
+    type: "file",
+    _links: {
+      self:
+        "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC00126.jpg?ref=main",
+      git:
+        "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/319835252fe62309abc48257157e3ad68e08678a",
+      html:
+        "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC00126.jpg",
+    },
+  },
+  {
+    name: "DSC00129.jpg",
+    path: "Portraits/DSC00129.jpg",
+    sha: "2ffbf78d8e652697a8f4f133fea3155123032f9f",
+    size: 6368235,
+    url:
+      "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC00129.jpg?ref=main",
+    html_url:
+      "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC00129.jpg",
+    git_url:
+      "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/2ffbf78d8e652697a8f4f133fea3155123032f9f",
+    download_url:
+      "https://raw.githubusercontent.com/maxgrier/PhotoRepo/main/Portraits/DSC00129.jpg",
+    type: "file",
+    _links: {
+      self:
+        "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC00129.jpg?ref=main",
+      git:
+        "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/2ffbf78d8e652697a8f4f133fea3155123032f9f",
+      html:
+        "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC00129.jpg",
+    },
+  },
+  {
+    name: "DSC00130.jpg",
+    path: "Portraits/DSC00130.jpg",
+    sha: "e6d92918681e217e8dd0e296ebbbb1a633677fc9",
+    size: 5877276,
+    url:
+      "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC00130.jpg?ref=main",
+    html_url:
+      "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC00130.jpg",
+    git_url:
+      "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/e6d92918681e217e8dd0e296ebbbb1a633677fc9",
+    download_url:
+      "https://raw.githubusercontent.com/maxgrier/PhotoRepo/main/Portraits/DSC00130.jpg",
+    type: "file",
+    _links: {
+      self:
+        "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC00130.jpg?ref=main",
+      git:
+        "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/e6d92918681e217e8dd0e296ebbbb1a633677fc9",
+      html:
+        "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC00130.jpg",
+    },
+  },
+  {
+    name: "DSC00132.jpg",
+    path: "Portraits/DSC00132.jpg",
+    sha: "b0dbebd2b59f838bc3906e2b8ef7b2b92e87bcf4",
+    size: 5288671,
+    url:
+      "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC00132.jpg?ref=main",
+    html_url:
+      "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC00132.jpg",
+    git_url:
+      "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/b0dbebd2b59f838bc3906e2b8ef7b2b92e87bcf4",
+    download_url:
+      "https://raw.githubusercontent.com/maxgrier/PhotoRepo/main/Portraits/DSC00132.jpg",
+    type: "file",
+    _links: {
+      self:
+        "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC00132.jpg?ref=main",
+      git:
+        "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/b0dbebd2b59f838bc3906e2b8ef7b2b92e87bcf4",
+      html:
+        "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC00132.jpg",
+    },
+  },
+  {
+    name: "DSC00133.jpg",
+    path: "Portraits/DSC00133.jpg",
+    sha: "0539977f9593a337caf0673faaf4d1a02fe83fbd",
+    size: 5670620,
+    url:
+      "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC00133.jpg?ref=main",
+    html_url:
+      "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC00133.jpg",
+    git_url:
+      "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/0539977f9593a337caf0673faaf4d1a02fe83fbd",
+    download_url:
+      "https://raw.githubusercontent.com/maxgrier/PhotoRepo/main/Portraits/DSC00133.jpg",
+    type: "file",
+    _links: {
+      self:
+        "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC00133.jpg?ref=main",
+      git:
+        "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/0539977f9593a337caf0673faaf4d1a02fe83fbd",
+      html:
+        "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC00133.jpg",
+    },
+  },
+  {
+    name: "DSC00140.jpg",
+    path: "Portraits/DSC00140.jpg",
+    sha: "9b9ab9f47aba049ed17c35d0b179aaaa98b15cfd",
+    size: 7238384,
+    url:
+      "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC00140.jpg?ref=main",
+    html_url:
+      "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC00140.jpg",
+    git_url:
+      "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/9b9ab9f47aba049ed17c35d0b179aaaa98b15cfd",
+    download_url:
+      "https://raw.githubusercontent.com/maxgrier/PhotoRepo/main/Portraits/DSC00140.jpg",
+    type: "file",
+    _links: {
+      self:
+        "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC00140.jpg?ref=main",
+      git:
+        "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/9b9ab9f47aba049ed17c35d0b179aaaa98b15cfd",
+      html:
+        "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC00140.jpg",
+    },
+  },
+  // End mine
+  {
+    name: "DSC09973.jpg",
+    path: "Portraits/DSC09973.jpg",
+    sha: "59befd23d32db068c77cc3f5c7ce2f19801aec49",
+    size: 6361394,
+    url:
+      "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09973.jpg?ref=main",
+    html_url:
+      "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09973.jpg",
+    git_url:
+      "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/59befd23d32db068c77cc3f5c7ce2f19801aec49",
+    download_url:
+      "https://raw.githubusercontent.com/maxgrier/PhotoRepo/main/Portraits/DSC09973.jpg",
+    type: "file",
+    _links: {
+      self:
+        "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09973.jpg?ref=main",
+      git:
+        "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/59befd23d32db068c77cc3f5c7ce2f19801aec49",
+      html:
+        "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09973.jpg",
+    },
+  },
+  {
+    name: "DSC09975.jpg",
+    path: "Portraits/DSC09975.jpg",
+    sha: "ca56a4ee4289f6b41c78ac62802a33bf96be4f1d",
+    size: 6047977,
+    url:
+      "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09975.jpg?ref=main",
+    html_url:
+      "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09975.jpg",
+    git_url:
+      "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/ca56a4ee4289f6b41c78ac62802a33bf96be4f1d",
+    download_url:
+      "https://raw.githubusercontent.com/maxgrier/PhotoRepo/main/Portraits/DSC09975.jpg",
+    type: "file",
+    _links: {
+      self:
+        "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09975.jpg?ref=main",
+      git:
+        "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/ca56a4ee4289f6b41c78ac62802a33bf96be4f1d",
+      html:
+        "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09975.jpg",
+    },
+  },
+  {
+    name: "DSC09978.jpg",
+    path: "Portraits/DSC09978.jpg",
+    sha: "2a7b7f1f443676e56dadfda09b27301021694f39",
+    size: 6768265,
+    url:
+      "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09978.jpg?ref=main",
+    html_url:
+      "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09978.jpg",
+    git_url:
+      "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/2a7b7f1f443676e56dadfda09b27301021694f39",
+    download_url:
+      "https://raw.githubusercontent.com/maxgrier/PhotoRepo/main/Portraits/DSC09978.jpg",
+    type: "file",
+    _links: {
+      self:
+        "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09978.jpg?ref=main",
+      git:
+        "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/2a7b7f1f443676e56dadfda09b27301021694f39",
+      html:
+        "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09978.jpg",
+    },
+  },
+  {
+    name: "DSC09981.jpg",
+    path: "Portraits/DSC09981.jpg",
+    sha: "1a0cd905e34f7d6ba9961a8f44e2873f26d6749d",
+    size: 6172547,
+    url:
+      "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09981.jpg?ref=main",
+    html_url:
+      "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09981.jpg",
+    git_url:
+      "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/1a0cd905e34f7d6ba9961a8f44e2873f26d6749d",
+    download_url:
+      "https://raw.githubusercontent.com/maxgrier/PhotoRepo/main/Portraits/DSC09981.jpg",
+    type: "file",
+    _links: {
+      self:
+        "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09981.jpg?ref=main",
+      git:
+        "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/1a0cd905e34f7d6ba9961a8f44e2873f26d6749d",
+      html:
+        "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09981.jpg",
+    },
+  },
+  {
+    name: "DSC09985.jpg",
+    path: "Portraits/DSC09985.jpg",
+    sha: "c99086347a1efe361d5b80dfd5e6ce4746abacc1",
+    size: 6409860,
+    url:
+      "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09985.jpg?ref=main",
+    html_url:
+      "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09985.jpg",
+    git_url:
+      "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/c99086347a1efe361d5b80dfd5e6ce4746abacc1",
+    download_url:
+      "https://raw.githubusercontent.com/maxgrier/PhotoRepo/main/Portraits/DSC09985.jpg",
+    type: "file",
+    _links: {
+      self:
+        "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09985.jpg?ref=main",
+      git:
+        "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/c99086347a1efe361d5b80dfd5e6ce4746abacc1",
+      html:
+        "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09985.jpg",
+    },
+  },
+  {
+    name: "DSC09987.jpg",
+    path: "Portraits/DSC09987.jpg",
+    sha: "fac4deb21f5525c7a233cc46395d755cbffce10f",
+    size: 5926561,
+    url:
+      "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09987.jpg?ref=main",
+    html_url:
+      "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09987.jpg",
+    git_url:
+      "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/fac4deb21f5525c7a233cc46395d755cbffce10f",
+    download_url:
+      "https://raw.githubusercontent.com/maxgrier/PhotoRepo/main/Portraits/DSC09987.jpg",
+    type: "file",
+    _links: {
+      self:
+        "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09987.jpg?ref=main",
+      git:
+        "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/fac4deb21f5525c7a233cc46395d755cbffce10f",
+      html:
+        "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09987.jpg",
+    },
+  },
+  {
+    name: "DSC09988.jpg",
+    path: "Portraits/DSC09988.jpg",
+    sha: "397caa18713735c3b803d3b313867ec237f7ad67",
+    size: 5265846,
+    url:
+      "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09988.jpg?ref=main",
+    html_url:
+      "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09988.jpg",
+    git_url:
+      "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/397caa18713735c3b803d3b313867ec237f7ad67",
+    download_url:
+      "https://raw.githubusercontent.com/maxgrier/PhotoRepo/main/Portraits/DSC09988.jpg",
+    type: "file",
+    _links: {
+      self:
+        "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09988.jpg?ref=main",
+      git:
+        "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/397caa18713735c3b803d3b313867ec237f7ad67",
+      html:
+        "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09988.jpg",
+    },
+  },
+  {
+    name: "DSC09993.jpg",
+    path: "Portraits/DSC09993.jpg",
+    sha: "980359182c50f84fec7c88dd45a4de25588ba7ae",
+    size: 6635796,
+    url:
+      "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09993.jpg?ref=main",
+    html_url:
+      "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09993.jpg",
+    git_url:
+      "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/980359182c50f84fec7c88dd45a4de25588ba7ae",
+    download_url:
+      "https://raw.githubusercontent.com/maxgrier/PhotoRepo/main/Portraits/DSC09993.jpg",
+    type: "file",
+    _links: {
+      self:
+        "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09993.jpg?ref=main",
+      git:
+        "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/980359182c50f84fec7c88dd45a4de25588ba7ae",
+      html:
+        "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09993.jpg",
+    },
+  },
+  {
+    name: "DSC09996.jpg",
+    path: "Portraits/DSC09996.jpg",
+    sha: "2a2c43f53c46d880998a6283aad87819cc209b18",
+    size: 6282570,
+    url:
+      "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09996.jpg?ref=main",
+    html_url:
+      "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09996.jpg",
+    git_url:
+      "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/2a2c43f53c46d880998a6283aad87819cc209b18",
+    download_url:
+      "https://raw.githubusercontent.com/maxgrier/PhotoRepo/main/Portraits/DSC09996.jpg",
+    type: "file",
+    _links: {
+      self:
+        "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09996.jpg?ref=main",
+      git:
+        "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/2a2c43f53c46d880998a6283aad87819cc209b18",
+      html:
+        "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09996.jpg",
+    },
+  },
+
   {
     name: "DSC00010.jpg",
     path: "Portraits/DSC00010.jpg",
@@ -373,144 +884,6 @@ let sliderImagePortraits = [
         "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/43d46eaeae488a4c62736faf48f1d7e5846b6408",
       html:
         "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC00123.jpg",
-    },
-  },
-  {
-    name: "DSC00126.jpg",
-    path: "Portraits/DSC00126.jpg",
-    sha: "319835252fe62309abc48257157e3ad68e08678a",
-    size: 5468598,
-    url:
-      "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC00126.jpg?ref=main",
-    html_url:
-      "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC00126.jpg",
-    git_url:
-      "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/319835252fe62309abc48257157e3ad68e08678a",
-    download_url:
-      "https://raw.githubusercontent.com/maxgrier/PhotoRepo/main/Portraits/DSC00126.jpg",
-    type: "file",
-    _links: {
-      self:
-        "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC00126.jpg?ref=main",
-      git:
-        "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/319835252fe62309abc48257157e3ad68e08678a",
-      html:
-        "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC00126.jpg",
-    },
-  },
-  {
-    name: "DSC00129.jpg",
-    path: "Portraits/DSC00129.jpg",
-    sha: "2ffbf78d8e652697a8f4f133fea3155123032f9f",
-    size: 6368235,
-    url:
-      "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC00129.jpg?ref=main",
-    html_url:
-      "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC00129.jpg",
-    git_url:
-      "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/2ffbf78d8e652697a8f4f133fea3155123032f9f",
-    download_url:
-      "https://raw.githubusercontent.com/maxgrier/PhotoRepo/main/Portraits/DSC00129.jpg",
-    type: "file",
-    _links: {
-      self:
-        "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC00129.jpg?ref=main",
-      git:
-        "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/2ffbf78d8e652697a8f4f133fea3155123032f9f",
-      html:
-        "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC00129.jpg",
-    },
-  },
-  {
-    name: "DSC00130.jpg",
-    path: "Portraits/DSC00130.jpg",
-    sha: "e6d92918681e217e8dd0e296ebbbb1a633677fc9",
-    size: 5877276,
-    url:
-      "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC00130.jpg?ref=main",
-    html_url:
-      "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC00130.jpg",
-    git_url:
-      "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/e6d92918681e217e8dd0e296ebbbb1a633677fc9",
-    download_url:
-      "https://raw.githubusercontent.com/maxgrier/PhotoRepo/main/Portraits/DSC00130.jpg",
-    type: "file",
-    _links: {
-      self:
-        "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC00130.jpg?ref=main",
-      git:
-        "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/e6d92918681e217e8dd0e296ebbbb1a633677fc9",
-      html:
-        "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC00130.jpg",
-    },
-  },
-  {
-    name: "DSC00132.jpg",
-    path: "Portraits/DSC00132.jpg",
-    sha: "b0dbebd2b59f838bc3906e2b8ef7b2b92e87bcf4",
-    size: 5288671,
-    url:
-      "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC00132.jpg?ref=main",
-    html_url:
-      "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC00132.jpg",
-    git_url:
-      "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/b0dbebd2b59f838bc3906e2b8ef7b2b92e87bcf4",
-    download_url:
-      "https://raw.githubusercontent.com/maxgrier/PhotoRepo/main/Portraits/DSC00132.jpg",
-    type: "file",
-    _links: {
-      self:
-        "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC00132.jpg?ref=main",
-      git:
-        "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/b0dbebd2b59f838bc3906e2b8ef7b2b92e87bcf4",
-      html:
-        "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC00132.jpg",
-    },
-  },
-  {
-    name: "DSC00133.jpg",
-    path: "Portraits/DSC00133.jpg",
-    sha: "0539977f9593a337caf0673faaf4d1a02fe83fbd",
-    size: 5670620,
-    url:
-      "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC00133.jpg?ref=main",
-    html_url:
-      "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC00133.jpg",
-    git_url:
-      "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/0539977f9593a337caf0673faaf4d1a02fe83fbd",
-    download_url:
-      "https://raw.githubusercontent.com/maxgrier/PhotoRepo/main/Portraits/DSC00133.jpg",
-    type: "file",
-    _links: {
-      self:
-        "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC00133.jpg?ref=main",
-      git:
-        "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/0539977f9593a337caf0673faaf4d1a02fe83fbd",
-      html:
-        "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC00133.jpg",
-    },
-  },
-  {
-    name: "DSC00140.jpg",
-    path: "Portraits/DSC00140.jpg",
-    sha: "9b9ab9f47aba049ed17c35d0b179aaaa98b15cfd",
-    size: 7238384,
-    url:
-      "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC00140.jpg?ref=main",
-    html_url:
-      "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC00140.jpg",
-    git_url:
-      "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/9b9ab9f47aba049ed17c35d0b179aaaa98b15cfd",
-    download_url:
-      "https://raw.githubusercontent.com/maxgrier/PhotoRepo/main/Portraits/DSC00140.jpg",
-    type: "file",
-    _links: {
-      self:
-        "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC00140.jpg?ref=main",
-      git:
-        "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/9b9ab9f47aba049ed17c35d0b179aaaa98b15cfd",
-      html:
-        "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC00140.jpg",
     },
   },
   {
@@ -2903,374 +3276,6 @@ let sliderImagePortraits = [
         "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/b6f88f45c6e9bfde25b8b7870ee7cc971dc42466",
       html:
         "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC01389.jpg",
-    },
-  },
-  {
-    name: "DSC09929.jpg",
-    path: "Portraits/DSC09929.jpg",
-    sha: "6beb6a290b3d26566cd9278a6dfe92d07ad951a6",
-    size: 8467395,
-    url:
-      "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09929.jpg?ref=main",
-    html_url:
-      "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09929.jpg",
-    git_url:
-      "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/6beb6a290b3d26566cd9278a6dfe92d07ad951a6",
-    download_url:
-      "https://raw.githubusercontent.com/maxgrier/PhotoRepo/main/Portraits/DSC09929.jpg",
-    type: "file",
-    _links: {
-      self:
-        "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09929.jpg?ref=main",
-      git:
-        "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/6beb6a290b3d26566cd9278a6dfe92d07ad951a6",
-      html:
-        "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09929.jpg",
-    },
-  },
-  {
-    name: "DSC09934.jpg",
-    path: "Portraits/DSC09934.jpg",
-    sha: "3b43f568be24010dbc2b52d732f31586a71e2d23",
-    size: 7752728,
-    url:
-      "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09934.jpg?ref=main",
-    html_url:
-      "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09934.jpg",
-    git_url:
-      "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/3b43f568be24010dbc2b52d732f31586a71e2d23",
-    download_url:
-      "https://raw.githubusercontent.com/maxgrier/PhotoRepo/main/Portraits/DSC09934.jpg",
-    type: "file",
-    _links: {
-      self:
-        "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09934.jpg?ref=main",
-      git:
-        "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/3b43f568be24010dbc2b52d732f31586a71e2d23",
-      html:
-        "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09934.jpg",
-    },
-  },
-  {
-    name: "DSC09937.jpg",
-    path: "Portraits/DSC09937.jpg",
-    sha: "ccba87982ab98316c6ec6d66c10ab9bd680bc7f9",
-    size: 8126941,
-    url:
-      "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09937.jpg?ref=main",
-    html_url:
-      "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09937.jpg",
-    git_url:
-      "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/ccba87982ab98316c6ec6d66c10ab9bd680bc7f9",
-    download_url:
-      "https://raw.githubusercontent.com/maxgrier/PhotoRepo/main/Portraits/DSC09937.jpg",
-    type: "file",
-    _links: {
-      self:
-        "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09937.jpg?ref=main",
-      git:
-        "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/ccba87982ab98316c6ec6d66c10ab9bd680bc7f9",
-      html:
-        "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09937.jpg",
-    },
-  },
-  {
-    name: "DSC09938.jpg",
-    path: "Portraits/DSC09938.jpg",
-    sha: "9ad987ad7f5ecbee24f1b30d616ce8aa113a5c65",
-    size: 7809338,
-    url:
-      "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09938.jpg?ref=main",
-    html_url:
-      "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09938.jpg",
-    git_url:
-      "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/9ad987ad7f5ecbee24f1b30d616ce8aa113a5c65",
-    download_url:
-      "https://raw.githubusercontent.com/maxgrier/PhotoRepo/main/Portraits/DSC09938.jpg",
-    type: "file",
-    _links: {
-      self:
-        "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09938.jpg?ref=main",
-      git:
-        "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/9ad987ad7f5ecbee24f1b30d616ce8aa113a5c65",
-      html:
-        "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09938.jpg",
-    },
-  },
-  {
-    name: "DSC09948.jpg",
-    path: "Portraits/DSC09948.jpg",
-    sha: "b7c34580c0c7ef7956a1989d34739ce9e9eadeaf",
-    size: 5891500,
-    url:
-      "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09948.jpg?ref=main",
-    html_url:
-      "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09948.jpg",
-    git_url:
-      "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/b7c34580c0c7ef7956a1989d34739ce9e9eadeaf",
-    download_url:
-      "https://raw.githubusercontent.com/maxgrier/PhotoRepo/main/Portraits/DSC09948.jpg",
-    type: "file",
-    _links: {
-      self:
-        "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09948.jpg?ref=main",
-      git:
-        "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/b7c34580c0c7ef7956a1989d34739ce9e9eadeaf",
-      html:
-        "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09948.jpg",
-    },
-  },
-  {
-    name: "DSC09952.jpg",
-    path: "Portraits/DSC09952.jpg",
-    sha: "9cad43c69463c687b43d8a0a6a96f62f988626fc",
-    size: 5965000,
-    url:
-      "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09952.jpg?ref=main",
-    html_url:
-      "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09952.jpg",
-    git_url:
-      "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/9cad43c69463c687b43d8a0a6a96f62f988626fc",
-    download_url:
-      "https://raw.githubusercontent.com/maxgrier/PhotoRepo/main/Portraits/DSC09952.jpg",
-    type: "file",
-    _links: {
-      self:
-        "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09952.jpg?ref=main",
-      git:
-        "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/9cad43c69463c687b43d8a0a6a96f62f988626fc",
-      html:
-        "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09952.jpg",
-    },
-  },
-  {
-    name: "DSC09959.jpg",
-    path: "Portraits/DSC09959.jpg",
-    sha: "e71c60591ad0a47ae6025cdc0a962e46dc7673ee",
-    size: 6516758,
-    url:
-      "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09959.jpg?ref=main",
-    html_url:
-      "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09959.jpg",
-    git_url:
-      "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/e71c60591ad0a47ae6025cdc0a962e46dc7673ee",
-    download_url:
-      "https://raw.githubusercontent.com/maxgrier/PhotoRepo/main/Portraits/DSC09959.jpg",
-    type: "file",
-    _links: {
-      self:
-        "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09959.jpg?ref=main",
-      git:
-        "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/e71c60591ad0a47ae6025cdc0a962e46dc7673ee",
-      html:
-        "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09959.jpg",
-    },
-  },
-  {
-    name: "DSC09973.jpg",
-    path: "Portraits/DSC09973.jpg",
-    sha: "59befd23d32db068c77cc3f5c7ce2f19801aec49",
-    size: 6361394,
-    url:
-      "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09973.jpg?ref=main",
-    html_url:
-      "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09973.jpg",
-    git_url:
-      "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/59befd23d32db068c77cc3f5c7ce2f19801aec49",
-    download_url:
-      "https://raw.githubusercontent.com/maxgrier/PhotoRepo/main/Portraits/DSC09973.jpg",
-    type: "file",
-    _links: {
-      self:
-        "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09973.jpg?ref=main",
-      git:
-        "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/59befd23d32db068c77cc3f5c7ce2f19801aec49",
-      html:
-        "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09973.jpg",
-    },
-  },
-  {
-    name: "DSC09975.jpg",
-    path: "Portraits/DSC09975.jpg",
-    sha: "ca56a4ee4289f6b41c78ac62802a33bf96be4f1d",
-    size: 6047977,
-    url:
-      "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09975.jpg?ref=main",
-    html_url:
-      "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09975.jpg",
-    git_url:
-      "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/ca56a4ee4289f6b41c78ac62802a33bf96be4f1d",
-    download_url:
-      "https://raw.githubusercontent.com/maxgrier/PhotoRepo/main/Portraits/DSC09975.jpg",
-    type: "file",
-    _links: {
-      self:
-        "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09975.jpg?ref=main",
-      git:
-        "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/ca56a4ee4289f6b41c78ac62802a33bf96be4f1d",
-      html:
-        "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09975.jpg",
-    },
-  },
-  {
-    name: "DSC09978.jpg",
-    path: "Portraits/DSC09978.jpg",
-    sha: "2a7b7f1f443676e56dadfda09b27301021694f39",
-    size: 6768265,
-    url:
-      "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09978.jpg?ref=main",
-    html_url:
-      "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09978.jpg",
-    git_url:
-      "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/2a7b7f1f443676e56dadfda09b27301021694f39",
-    download_url:
-      "https://raw.githubusercontent.com/maxgrier/PhotoRepo/main/Portraits/DSC09978.jpg",
-    type: "file",
-    _links: {
-      self:
-        "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09978.jpg?ref=main",
-      git:
-        "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/2a7b7f1f443676e56dadfda09b27301021694f39",
-      html:
-        "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09978.jpg",
-    },
-  },
-  {
-    name: "DSC09981.jpg",
-    path: "Portraits/DSC09981.jpg",
-    sha: "1a0cd905e34f7d6ba9961a8f44e2873f26d6749d",
-    size: 6172547,
-    url:
-      "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09981.jpg?ref=main",
-    html_url:
-      "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09981.jpg",
-    git_url:
-      "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/1a0cd905e34f7d6ba9961a8f44e2873f26d6749d",
-    download_url:
-      "https://raw.githubusercontent.com/maxgrier/PhotoRepo/main/Portraits/DSC09981.jpg",
-    type: "file",
-    _links: {
-      self:
-        "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09981.jpg?ref=main",
-      git:
-        "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/1a0cd905e34f7d6ba9961a8f44e2873f26d6749d",
-      html:
-        "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09981.jpg",
-    },
-  },
-  {
-    name: "DSC09985.jpg",
-    path: "Portraits/DSC09985.jpg",
-    sha: "c99086347a1efe361d5b80dfd5e6ce4746abacc1",
-    size: 6409860,
-    url:
-      "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09985.jpg?ref=main",
-    html_url:
-      "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09985.jpg",
-    git_url:
-      "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/c99086347a1efe361d5b80dfd5e6ce4746abacc1",
-    download_url:
-      "https://raw.githubusercontent.com/maxgrier/PhotoRepo/main/Portraits/DSC09985.jpg",
-    type: "file",
-    _links: {
-      self:
-        "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09985.jpg?ref=main",
-      git:
-        "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/c99086347a1efe361d5b80dfd5e6ce4746abacc1",
-      html:
-        "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09985.jpg",
-    },
-  },
-  {
-    name: "DSC09987.jpg",
-    path: "Portraits/DSC09987.jpg",
-    sha: "fac4deb21f5525c7a233cc46395d755cbffce10f",
-    size: 5926561,
-    url:
-      "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09987.jpg?ref=main",
-    html_url:
-      "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09987.jpg",
-    git_url:
-      "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/fac4deb21f5525c7a233cc46395d755cbffce10f",
-    download_url:
-      "https://raw.githubusercontent.com/maxgrier/PhotoRepo/main/Portraits/DSC09987.jpg",
-    type: "file",
-    _links: {
-      self:
-        "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09987.jpg?ref=main",
-      git:
-        "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/fac4deb21f5525c7a233cc46395d755cbffce10f",
-      html:
-        "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09987.jpg",
-    },
-  },
-  {
-    name: "DSC09988.jpg",
-    path: "Portraits/DSC09988.jpg",
-    sha: "397caa18713735c3b803d3b313867ec237f7ad67",
-    size: 5265846,
-    url:
-      "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09988.jpg?ref=main",
-    html_url:
-      "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09988.jpg",
-    git_url:
-      "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/397caa18713735c3b803d3b313867ec237f7ad67",
-    download_url:
-      "https://raw.githubusercontent.com/maxgrier/PhotoRepo/main/Portraits/DSC09988.jpg",
-    type: "file",
-    _links: {
-      self:
-        "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09988.jpg?ref=main",
-      git:
-        "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/397caa18713735c3b803d3b313867ec237f7ad67",
-      html:
-        "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09988.jpg",
-    },
-  },
-  {
-    name: "DSC09993.jpg",
-    path: "Portraits/DSC09993.jpg",
-    sha: "980359182c50f84fec7c88dd45a4de25588ba7ae",
-    size: 6635796,
-    url:
-      "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09993.jpg?ref=main",
-    html_url:
-      "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09993.jpg",
-    git_url:
-      "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/980359182c50f84fec7c88dd45a4de25588ba7ae",
-    download_url:
-      "https://raw.githubusercontent.com/maxgrier/PhotoRepo/main/Portraits/DSC09993.jpg",
-    type: "file",
-    _links: {
-      self:
-        "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09993.jpg?ref=main",
-      git:
-        "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/980359182c50f84fec7c88dd45a4de25588ba7ae",
-      html:
-        "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09993.jpg",
-    },
-  },
-  {
-    name: "DSC09996.jpg",
-    path: "Portraits/DSC09996.jpg",
-    sha: "2a2c43f53c46d880998a6283aad87819cc209b18",
-    size: 6282570,
-    url:
-      "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09996.jpg?ref=main",
-    html_url:
-      "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09996.jpg",
-    git_url:
-      "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/2a2c43f53c46d880998a6283aad87819cc209b18",
-    download_url:
-      "https://raw.githubusercontent.com/maxgrier/PhotoRepo/main/Portraits/DSC09996.jpg",
-    type: "file",
-    _links: {
-      self:
-        "https://api.github.com/repos/maxgrier/PhotoRepo/contents/Portraits/DSC09996.jpg?ref=main",
-      git:
-        "https://api.github.com/repos/maxgrier/PhotoRepo/git/blobs/2a2c43f53c46d880998a6283aad87819cc209b18",
-      html:
-        "https://github.com/maxgrier/PhotoRepo/blob/main/Portraits/DSC09996.jpg",
     },
   },
 ];
