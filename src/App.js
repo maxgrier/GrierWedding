@@ -48,8 +48,6 @@ function App() {
 
   // let allImages = sliderImageGroups + sliderImagePortraits + sliderImageCeremony
   let allImages = [];
-  // console.log(sliderImageGroups)
-  // console.log(sliderImagePortraits)
   // console.log(sliderImageCeremony)
   // allImages.push(...sliderImageGroups.slice(0,30));
   // allImages.push(...sliderImagePortraits.slice(0,30));
